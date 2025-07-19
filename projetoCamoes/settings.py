@@ -80,7 +80,6 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    #'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware', # language perferences
     'django.middleware.common.CommonMiddleware',
@@ -223,14 +222,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # redirecionar Login e Logout
 #LOGIN_REDIRECT_URL = "mainPages:dashboard_contrib"
 #LOGOUT_REDIRECT_URL = "mainPages:login"
-
-# Static file serving.
-# https://whitenoise.readthedocs.io/en/stable/django.html#add-compression-and-caching-support
-'''
-STORAGES = {
-    # ...
-    "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
-    },
-}
-'''

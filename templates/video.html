@@ -1,0 +1,52 @@
+{% extends './base.html' %} 
+{% load i18n %} 
+{% load static %} 
+
+{% block head %}
+{% include "head_links.html" with title="Vídeos" %}
+<link rel="stylesheet" href="{% static 'css/videos.css' %}" />
+{% endblock %} 
+
+{% block main %}
+<h1>{{_("Vídeos")}}</h1>
+<h2>{{_("Gravações das oficinas realizadas")}}</h2>
+
+<div class="container">
+  <div class="video-gallery">
+    {% for v in videos%}
+    <div class="side-video">
+      <div
+        class="video-cover"
+        onclick="playVideo(this)"
+        data-video="{{v.video}}"
+        data-title="{{v.title}}"
+        data-date="{{v.date}}"
+      >
+        <img src="{{v.img.url}}" alt="{{v.alt}}" />
+      </div>
+      <div class="video-caption">
+        <h4>{{v.title}}</h4>
+        <p>{{_("com")}} {{v.author}}</p>
+        <p>{{v.ogdate}}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div id="video-modal" class="modal" style="display: none">
+  <div class="modal-content">
+    <button id="close-modal">×</button>
+    <iframe
+      src=""
+      frameborder="0"
+      allow="autoplay; fullscreen"
+      allowfullscreen
+    ></iframe>
+  </div>
+</div>
+{% endblock %} 
+
+{% block script %} 
+  <script src="{% static 'js/videos.js' %}"></script>
+{% endblock %}

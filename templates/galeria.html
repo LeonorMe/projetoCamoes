@@ -1,0 +1,45 @@
+{% extends './base.html' %}
+
+{% load i18n %}
+{% load static %}
+
+{% block head %}
+  {% include "head_links.html" with title="Galeria" %}
+  <link rel="stylesheet" href="{% static 'css/galeria.css' %}" />
+{% endblock %}
+
+{% block main %}
+    <h1>{{_("Galeria")}}</h1>
+    <h2>{{_("Projetos inspirados n'")}}<i>{{_("Os Lusíadas")}}</i></h2>
+
+    <div class="container py-5">
+      <div class="row g-4" id="galeria">
+        {% for image in images %}
+
+        <div class="col-md-6 col-lg-4">
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img class="img" src="{{image.img.url}}" alt="{{image.alt}}"/>
+              </div>
+              <div class="flip-box-back">
+                {%if image.canto != "" %}
+                <p>{{_("Canto")}} {{image.canto}}<p>
+                {% endif %}
+                <p>{{image.title}}</i>
+                <p>{{_("Autor(a):")}} {{image.author}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {% endfor %}
+      </div>
+    </div>
+
+{% endblock %}
+
+{% block script %}
+  {% load static %}
+  <script src="{% static 'js/galeria.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,105 @@
+.info_section {
+    padding: 5vh 10vw 5vh 10vw;
+    background-color: var(--primary);
+    color: var(--on-primary);
+}
+
+.info_section .row {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5vw;
+}
+
+#info_section .col {
+    padding: 1rem;
+    width: 5vw;
+}
+
+.info_section h4 {
+    margin-bottom: 0.7rem;
+}
+
+.col #info_nav {
+    width: 100%;
+}
+
+.col #info_about {
+    width: 100%;
+}
+
+.col #info_subscribe {
+    width: 100%;
+}
+
+#info_nav nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#info_about p {
+    text-align: start;
+    text-justify: newspaper;
+}
+
+.info_section form input {
+    border: none;
+    border-bottom: 1px solid var(--on-primary);
+    background-color: transparent;
+    width: 100%;
+    height: 45px;
+    color: var(--on-primary);
+    ;
+    outline: none;
+}
+
+.info_section form input::placeholder {
+    color: var(--on-primary);
+    ;
+}
+
+.info_section form button {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 55px;
+    background-color: var(--accent);
+    color: #ffffff;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--accent);
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    margin-top: 15px;
+}
+
+.info_section form button:hover {
+    background-color: transparent;
+    color: var(--accent-variant);
+}
+
+/* ------------------------ */
+
+.footer_section {
+    width: 100%;
+    padding: 1vh 10vw;
+    background-color: var(--accent);
+    text-align: center;
+}
+
+.footer_section p {
+    color: var(--on-accent);
+    text-align: center;
+}
+
+/* Small devices */
+@media only screen and (max-width: 768px) {
+    .info_section {
+        padding: 5vh 10vw 0 10vw;
+    }
+
+    .info_section .row {
+        flex-direction: column;
+    }
+}

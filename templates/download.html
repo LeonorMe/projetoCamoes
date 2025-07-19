@@ -1,0 +1,32 @@
+{% extends './base_user.html' %} 
+{% load i18n %} 
+{% load static %} 
+
+{% block h1 %}
+<h1>{{_("Descarregar")}}</h1>
+{% endblock %} 
+
+{% block downloadImage %}
+<section class="dboad_sec_big">
+  <h2>{{_("Descarregar da Galeria")}}</h2>
+  <form method="post" action="download_image">
+    {% csrf_token %}
+    <label>
+      {{_("Selecione as imagens que pretende fazer download:")}}
+      <div class="select-img">
+        {% for i in images %}
+        <div>
+          <input class="checkbox" type="checkbox" name="{{i.id}}" /><img
+            class="preview"
+            src="{{i.img.url}}"
+          />
+          {{i.author}}
+          <a href="{{i.img.url}}" download>{{_("Descarregar")}}</a>
+        </div>
+        {% endfor %}
+      </div>
+    </label>
+    <button type="submit">{{_("Descarregar")}}</button>
+  </form>
+</section>
+{% endblock%}

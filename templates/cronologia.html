@@ -1,0 +1,33 @@
+{% extends './base.html' %}
+
+{% load i18n %}
+{% load static %}
+
+{% block head %}
+  {% include "head_links.html" with title="Cronologia" %} 
+  <link rel="stylesheet" href="{% static 'css/cronologia.css' %}" />
+{% endblock %} 
+
+{% block main %} 
+<section class="timeline">
+  <h1>{{_("Cronologia")}}</h1>
+  <h2>{{_("Vida e obra do Poeta")}}</h2>
+
+  <ul>
+    {% for e in events %}
+    <li>
+      <div>
+        <img src="{{e.img.url}}" alt="{{_('Imagem ilustrativa do evento no ano')}} {{e.year}}" />
+        <h3>{{e.year}} - {{e.title}}</h3>
+        <p>{{e.summary}}</p>
+        <a href="dados_cronologia?year={{e.year}}" class="saber-mais"
+          >{{_("Saber mais →")}}</a
+        >
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endblock %} {% block script %} {% load static %}
+<script src="{% static 'js/cronologia.js' %}"></script>
+{% endblock %}

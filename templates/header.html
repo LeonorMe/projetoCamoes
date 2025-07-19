@@ -1,0 +1,82 @@
+{% load i18n %}
+{% load static %}
+
+<header class="header_section">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg custom_nav-container ">
+      <a class="navbar-brand" href="{% url 'index' %}">
+        <img src="{% static 'images/Logo.png'%}" class="logo" alt="{{_("Logo do website")}}"></img>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class=""> </span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link active" href="{% url 'lusiadas' %}?id=0">{{_("Os Lusíadas")}}<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'cronologia' %}">{{_("Cronologia")}}</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="workshopDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              {{_("Oficinas")}}
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="workshopDropdown">
+              <li><a class="dropdown-item" href="{% url 'video' %}">{{_("Vídeos")}}</a></li>
+              <li><a class="dropdown-item" href="{% url 'galeria' %}">{{_("Galeria")}}</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'literatura' %}">{{_("Literatura")}}</a>
+          </li>
+
+          {%if request.user.is_authenticated%}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              {{_("Salve")}}, {{request.user}}!
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="userDropdown">
+              <li><a class="dropdown-item" href="{% url 'profile' %}">{{_("Perfil")}}</a></li>
+              <li><a class="dropdown-item" href="{% url 'download' %}">{{_("Descarregar")}}</a></li>
+              <li><a class="dropdown-item" href="{% url 'upload' %}">{{_("Carregar")}}</a></li>
+              <li><a class="dropdown-item" href="{% url 'logout' %}">{{_("Sair")}}</a></li>
+            </ul>
+          </li>
+
+          {% else%}
+            <li class="nav-item">
+              <a class="nav-link login-box" href="login">{{_("Fazer parte")}}</a>
+            </li>
+          {% endif %}
+          
+          <li class="nav-item dropdown">
+            {% load i18n %}
+            {% get_available_languages as languages %}
+            
+            <a class="nav-link dropdown-toggle" href="#" id="workshopDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <!--Idioma-->
+              {% translate "🇵🇹/🇪🇳" %}
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="workshopDropdown">
+              {% for lang_code, lang_name in languages %}
+              {% language lang_code %}
+              <li><a class="dropdown-item" href="/{{lang_code}}" >{{lang_name}}</a></li>
+              {% endlanguage %}
+              {% endfor %}
+            </ul>
+          </li>
+
+          <li id="change-theme-li" class="">
+            <div id="change-theme"><div id="change-theme-ball"><div></div>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+  

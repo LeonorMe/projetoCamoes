@@ -1,0 +1,31 @@
+.about_section .row {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.about_section .img-box img {
+    max-width: 100%;
+}
+
+.about_section .detail-box p {
+    color: var(--surface-variant);
+    margin-top: 15px;
+}
+
+.about_section .detail-box a {
+    display: inline-block;
+    padding: 10px 45px;
+    background-color: var(--secondary);
+    color: var(--on-secondary);
+    border-radius: 5px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    margin-top: 15px;
+}
+
+.about_section .detail-box a:hover {
+    background-color: transparent;
+    font-weight: 600;
+    color: var(--secondary);
+}

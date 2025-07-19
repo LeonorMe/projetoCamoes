@@ -1,0 +1,78 @@
+{% extends './base.html' %}
+
+{% load i18n %}
+{% load static %}
+
+{% block head %} 
+  {% include "head_links.html" with title="Os Lusíadas" %} 
+  <link rel="stylesheet" href="{% static 'css/lusiadas.css' %}" />
+{% endblock %} 
+
+{% block main%}
+<h1><i>{{_("Os Lusíadas")}}</i></h1>
+<h2>{{_("Canto")}} {{estrofe_canto}}</h2>
+
+<a href="download_pdf">{{_("Fazer download página")}}</a>
+
+{% if estrofe_id == '0'%}
+
+<section class="book">
+  <a id="cover-anim" href="{% url 'lusiadas' %}?id={{estrofe_id_next}}">
+    <article class="page right" id="book-cover">
+      <img src="{{estrofe_img}}" />
+    </article>
+  </a>
+</section>
+
+{% else %}
+
+<section class="book">
+  <a href="{% url 'lusiadas' %}?id={{estrofe_id_back}}">
+    <article class="page left">
+      <p class="book-title">Os Lusíadas</p>
+      <p></p>
+      <p class="estrofe-id">{{estrofe_id}}</p>
+      <div class="estrofe">
+        {% for verso in estrofe_pt %}
+        <p>{{verso}}</p>
+        {% endfor %}
+      </div>
+    </article>
+  </a>
+
+  <a href="{% url 'lusiadas' %}?id={{estrofe_id_next}}">
+    <article class="page right">
+      <p class="book-title">The Lusiads</p>
+      <p></p>
+      <p class="estrofe-id">{{estrofe_id}}</p>
+      <div class="estrofe">
+        {% for verso in estrofe_en %}
+        <p>{{verso}}</p>
+        {% endfor %}
+      </div>
+    </article>
+  </a>
+
+  <article class="card notes">
+    <h3>{{_("Notas")}}</h3>
+    <p>{{estrofe_note}}</p>
+    <p></p>
+  </article>
+
+  <article class="card illustration">
+    <img src="{{estrofe_img}}" />
+  </article>
+
+  <article class="card audio">
+    <h3>{{_("Leitura")}}</h3>
+    <audio controls>
+      <source src="./media/audio({{audio_pt}}" />
+    </audio>
+  </article>
+
+  {% endif %}
+</section>
+
+{% endblock %} {% block script %} {% load static %}
+<script src="{% static 'js/lusiadas.js' %}"></script>
+{% endblock %}

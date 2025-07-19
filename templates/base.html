@@ -1,0 +1,24 @@
+{% load i18n %} 
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    {% block head %} 
+      {% include "head_links.html" with title="" %} 
+    {% endblock %}
+  </head>
+
+  <body class="sub_page">
+    <!--dark-theme-->
+    {% include "header.html" %} 
+
+    {% block main %} 
+    {% endblock %} 
+
+    {% include "footer.html" %} 
+
+    <script src="{% static 'js/color_theme_presistence.js' %}"></script>
+    {% block script %} 
+    {% endblock %}
+  </body>
+</html>

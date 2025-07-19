@@ -1,0 +1,78 @@
+{% load i18n %} {% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include "head_links.html" with title="Entrar" %} {% load static %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}" />
+  </head>
+
+  <body class="dark-theme">
+    <div class="container">
+      <div class="form-box login">
+        <form method="POST" action="login">
+          {% csrf_token %}
+          <h1>{{_("Entrar")}}</h1>
+          <div class="input-box">
+            <!--label for="nome">Nome*:</label-->
+            {{form.username}}
+            <!--input type="text" placeholder="Nome" name="nome" required /-->
+            <i class="bx bx-user"></i>
+          </div>
+          <div class="input-box">
+            <!--label for="pass">Password*:</label-->
+            {{form.password}}
+            <!--input type="password" placeholder="Password" name="pass" required /-->
+            <i class="bx bx-lock"></i>
+          </div>
+          <div class="forgot-link">
+            <a href="#">{{_("Esqueceu-se da sua palavra-passe?")}}</a>
+          </div>
+          <input type="submit" value="{{_("Entrar")}}" />
+          <!--button type="submit" class="btn">Entrar</button-->
+        </form>
+        {{form.errors}} {% for message in messages%}
+        <p id="messages">{{message}}</p>
+        {% endfor %}
+      </div>
+
+      <div class="form-box register">
+        {% comment %}
+        <form method="POST" action="login">
+          {% csrf_token %}
+          <h1>Registar</h1>
+          <div class="input-box">
+            <input type="text" placeholder="Nome" required />
+            <i class="bx bx-user"></i>
+          </div>
+          <div class="input-box">
+            <input type="email" placeholder="Email" required />
+            <i class="bx bx-envelope"></i>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="Password" required />
+            <i class="bx bx-lock"></i>
+          </div>
+          <button type="submit" class="btn">Registar</button>
+        </form>
+        {% endcomment %}
+      </div>
+
+      <div class="toggle-box">
+        <div class="toggle-panel toggle-left">
+          <h1 class="login_bem_vindo">{{_("Salve, Bem-vindo/a!")}}</h1>
+          <p>{{_("Ainda não tem conta?")}}</p>
+          <button class="btn register-btn">{{_("Registar")}}</button>
+          <a href="register">{{_("Registar")}}</a>
+        </div>
+        <div class="toggle-panel toggle-right">
+          <h1 class="login_bem_vindo">{{_("Bem-vindo/a de volta!")}}</h1>
+          <p>{{_("Já tem uma conta?")}}</p>
+          <button class="btn login-btn">{{_("Entrar")}}</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="{% static 'js/login.js' %}"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+{% extends './base.html' %}
+
+{% load i18n %}
+{% load static %}
+
+
+{% block head %}
+  {% include "head_links.html" with title="500 anos" %}
+{% endblock %}
+
+{% block main %}
+  <section class="hero_sec">
+    <article class="hero_art">
+      <img src="{{image_url}}" alt="{{_("Imagem sobre Camões e as suas obras.")}}">
+    </article>
+  </section>
+
+  <section class="sec_quote">
+    <div class="quote_cont">
+      <p>
+      {% for line in quote_content%}
+        {{line}}<br>
+      {% endfor %}
+      <p>
+    <div>
+
+    <p class="quote_data xs">{{quote_author}}
+      {% if quote_book %}
+      , <i>{{quote_book}}</i>
+      {% endif %}
+    </p>
+  </section>
+{% endblock %}

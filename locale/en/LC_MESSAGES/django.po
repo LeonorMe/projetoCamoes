@@ -1,0 +1,383 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-18 19:47+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\mainPages\views.py:145
+msgid "Obrigada por subscrever!"
+msgstr "Tank you for subscribing!"
+
+#: .\projetoCamoes\settings.py:137
+msgid "Portuguese"
+msgstr "🇵🇹 Português"
+
+#: .\projetoCamoes\settings.py:138
+msgid "English"
+msgstr "🇪🇳 Inglês"
+
+#: .\templates\404.html:14
+msgid "Página não encontrada"
+msgstr "Page not found"
+
+#: .\templates\404.html:15
+msgid "Código de erro: 404"
+msgstr "Error code: 404"
+
+#: .\templates\404.html:16 .\templates\500.html:16
+msgid "Por favor, verifique o URL ou navegue para outra página."
+msgstr "Please check the URL or navigate to another page."
+
+#: .\templates\404.html:20 .\templates\500.html:20
+msgid "Voltar para à página inicial"
+msgstr "Back to home page"
+
+#: .\templates\404.html:23 .\templates\500.html:23
+msgid "Entra em contato conosco"
+msgstr "Contact us"
+
+#: .\templates\404.html:32
+msgid "Por tantos mares navegados"
+msgstr "Through so many seas sailed"
+
+#: .\templates\404.html:33
+msgid "e com mapas ainda errados,"
+msgstr "and with maps still wrong,"
+
+#: .\templates\404.html:34
+msgid "pensavam a terra ter chegado,"
+msgstr "thought the land had arrived,"
+
+#: .\templates\404.html:35
+msgid "quando viram o 404..."
+msgstr "when they saw the 404..."
+
+#: .\templates\500.html:14
+msgid "Problema com o servidor"
+msgstr "Problem with the server"
+
+#: .\templates\500.html:15
+msgid "Código de erro: 500"
+msgstr "Error code: 500"
+
+#: .\templates\base_user.html:15
+msgid "Autenticado"
+msgstr "Authenticated"
+
+#: .\templates\base_user.html:21
+msgid "Mensagens"
+msgstr "Messages"
+
+#: .\templates\base_user.html:28
+msgid "Não estão disponíveis mensagens."
+msgstr "No messages are available."
+
+#: .\templates\cronologia.html:13 .\templates\header.html:22
+msgid "Cronologia"
+msgstr "Chronology"
+
+#: .\templates\cronologia.html:14 .\templates\literatura.html:7
+msgid "Vida e obra do Poeta"
+msgstr "Life and work of the poet"
+
+#: .\templates\cronologia.html:20 .\templates\dados_cronologia.html:11
+msgid "Imagem ilustrativa do evento no ano"
+msgstr "Illustrative image of the event in the year"
+
+#: .\templates\cronologia.html:24
+msgid "Saber mais →"
+msgstr "Learn more →"
+
+#: .\templates\dados_cronologia.html:14
+msgid "Imagem retirada da web"
+msgstr "Image taken from the web"
+
+#: .\templates\dados_cronologia.html:16
+msgid "Voltar"
+msgstr "Go back"
+
+#: .\templates\download.html:6 .\templates\download.html:24
+#: .\templates\download.html:29 .\templates\header.html:44
+msgid "Descarregar"
+msgstr "Download"
+
+#: .\templates\download.html:11
+msgid "Descarregar da Galeria"
+msgstr "Download from Gallery"
+
+#: .\templates\download.html:15
+msgid "Selecione as imagens que pretende fazer download:"
+msgstr "Select the images you want to download:"
+
+#: .\templates\footer.html:5
+msgid "Sobre este website"
+msgstr "About this website"
+
+#: .\templates\footer.html:8
+msgid "Este website tem como objetivo a divulgação da obra"
+msgstr "The purpose of this website is to publicise the work"
+
+#: .\templates\footer.html:8 .\templates\galeria.html:13
+#: .\templates\header.html:19 .\templates\lusiadas.html:12
+#: .\templates\sobre.html:21
+msgid "Os Lusíadas"
+msgstr "The Lusiads"
+
+#: .\templates\footer.html:8
+msgid ""
+"do poeta português Luís de Camões e de atividades relacionadas com a obra na "
+"ocasião do aniversário dos 500 anos do nascimento do poeta."
+msgstr ""
+"by the Portuguese poet Luís de Camões and activities related to the work in "
+"the occasion of the 500th anniversary of the poet's birth."
+
+#: .\templates\footer.html:13
+msgid "Fica a par das novidades"
+msgstr "Keep up to date with what's new"
+
+#: .\templates\footer.html:27
+msgid "Subscrever"
+msgstr "Subscribe"
+
+#: .\templates\footer.html:34 .\templates\sobre.html:11
+#: .\templates\sobre.html:29
+msgid "Saber mais"
+msgstr "Learn more"
+
+#: .\templates\footer.html:38
+msgid "Sobre"
+msgstr "About"
+
+#: .\templates\footer.html:41
+msgid "Contacte-nos"
+msgstr "Contact us"
+
+#: .\templates\footer.html:44 .\templates\login.html:15
+#: .\templates\login.html:31 .\templates\login.html:72
+#: .\templates\register.html:61 .\templates\register.html:76
+#: .\templates\register.html:77
+msgid "Entrar"
+msgstr "Login"
+
+#: .\templates\footer.html:47 .\templates\login.html:66
+#: .\templates\login.html:67 .\templates\register.html:40
+#: .\templates\register.html:71
+msgid "Registar"
+msgstr "Register"
+
+#: .\templates\footer.html:57
+msgid "Camões 500 anos. Todos os direitos reservados."
+msgstr "Camões 500 years. All rights reserved."
+
+#: .\templates\galeria.html:12 .\templates\header.html:30
+msgid "Galeria"
+msgstr "Gallery"
+
+#: .\templates\galeria.html:13
+msgid "Projetos inspirados n'"
+msgstr "Projects inspired by"
+
+#: .\templates\galeria.html:27 .\templates\lusiadas.html:13
+msgid "Canto"
+msgstr "Canto"
+
+#: .\templates\galeria.html:30
+msgid "Autor(a):"
+msgstr "Author(s):"
+
+#: .\templates\head_links.html:18
+msgid "Camões -"
+msgstr "Camões -"
+
+#: .\templates\header.html:8
+msgid "Logo do website"
+msgstr "Website logo"
+
+#: .\templates\header.html:26
+msgid "Oficinas"
+msgstr "Workshops"
+
+#: .\templates\header.html:29 .\templates\video.html:11
+msgid "Vídeos"
+msgstr "Videos"
+
+#: .\templates\header.html:34 .\templates\literatura.html:6
+msgid "Literatura"
+msgstr "Literature"
+
+#: .\templates\header.html:40
+msgid "Salve"
+msgstr "Hail"
+
+#: .\templates\header.html:43 .\templates\profile.html:7
+msgid "Perfil"
+msgstr "Profile"
+
+#: .\templates\header.html:45 .\templates\upload.html:6
+msgid "Carregar"
+msgstr "Upload"
+
+#: .\templates\header.html:46
+msgid "Sair"
+msgstr "Logout"
+
+#: .\templates\header.html:52
+msgid "Fazer parte"
+msgstr "Take part"
+
+#: .\templates\header.html:62
+msgid "🇵🇹/🇪🇳"
+msgstr "🇪🇳/🇵🇹"
+
+#: .\templates\index.html:14
+msgid "Imagem sobre Camões e as suas obras."
+msgstr "Image about Camões and his works."
+
+#: .\templates\literatura.html:15
+msgid "de"
+msgstr "from"
+
+#: .\templates\login.html:29
+msgid "Esqueceu-se da sua palavra-passe?"
+msgstr "Forgot your password?"
+
+#: .\templates\login.html:64 .\templates\register.html:69
+msgid "Salve, Bem-vindo/a!"
+msgstr "Hail, Welcome!"
+
+#: .\templates\login.html:65 .\templates\register.html:70
+msgid "Ainda não tem conta?"
+msgstr "Don't have an account yet?"
+
+#: .\templates\login.html:70 .\templates\register.html:74
+msgid "Bem-vindo/a de volta!"
+msgstr "Welcome back!"
+
+#: .\templates\login.html:71 .\templates\register.html:75
+msgid "Já tem uma conta?"
+msgstr "Already have an account?"
+
+#: .\templates\lusiadas.html:15
+msgid "Fazer download página"
+msgstr "Download page"
+
+#: .\templates\lusiadas.html:57
+msgid "Notas"
+msgstr "Notes"
+
+#: .\templates\lusiadas.html:67
+msgid "Leitura"
+msgstr "Reading"
+
+#: .\templates\profile.html:12
+msgid "Bem vindo/a"
+msgstr "Welcome"
+
+#: .\templates\profile.html:32
+msgid "Enviar"
+msgstr "Submit"
+
+#: .\templates\sobre.html:19
+msgid "Sobre o projeto"
+msgstr "Sobre o projeto"
+
+#: .\templates\sobre.html:21
+msgid ""
+"Somos um grupo de estudantes do Instituto Superior de Engenharia de Lisboa "
+"(ISEL) no último ano da Licênciatura em Engenharia Informática e Multimédia. "
+"Como projeto final de licênciatura proposemo-nos a cronstuir um website "
+"dedicado à divulgação da obra"
+msgstr ""
+"We are a group of students from the Lisbon Higher Institute of Engineering "
+"(ISEL) in the final year of our degree in Computer and Multimedia "
+"Engineering. As our final degree project we set out to create a website "
+"dedicated to publicising the work"
+
+#: .\templates\sobre.html:21
+msgid "do grande poeta português - Luís de Camões."
+msgstr "by the great Portuguese poet - Luís de Camões."
+
+#: .\templates\sobre.html:24
+msgid ""
+"No contexto dos 500 anos do seu nascimento, o nosso objetivo é criar uma "
+"plataforma que não só apresente a obra de Camões, com a sua tradução para a "
+"língua inglesa, mas também mostrar como Camões ainda influência o mundo, em "
+"especial o artístico e literário, nos nossos dias."
+msgstr ""
+"In the context of the 500th anniversary of his birth, our aim is to create a "
+"platform that not only presents the work of Camões, with its translation "
+"into the English language, but also shows how Camões still influences the "
+"world, in especially the artistic and literary, nowadays."
+
+#: .\templates\sobre.html:27
+msgid "Este projeto foi possivél com a colaboração da NOVA, ...."
+msgstr "This project was made possible with the collaboration of NOVA, ...."
+
+#: .\templates\sobre.html:35
+msgid "ISEL"
+msgstr "ISEL"
+
+#: .\templates\sobre.html:40
+msgid "NOVA"
+msgstr "NOVA"
+
+#: .\templates\upload.html:11
+msgid "Carregar imagem"
+msgstr "Upload image"
+
+#: .\templates\upload.html:13
+msgid "Atenção: a sua imagem será ajustada para ficar com a proporção 4:3."
+msgstr "Please be aware that your image will be ajusted to a 4:3 aspect ratio."
+
+#: .\templates\upload.html:18
+msgid "Arraste e large ou clique aqui"
+msgstr "Drag and drop or click here"
+
+#: .\templates\upload.html:18
+msgid "para adicionar a imagem"
+msgstr "to add the image"
+
+#: .\templates\upload.html:19
+msgid "Adicone imagens apartir do ambiente de trabalho"
+msgstr "Add images from the desktop"
+
+#: .\templates\upload.html:27 .\templates\upload.html:40
+msgid "Submeter"
+msgstr "Submit"
+
+#: .\templates\upload.html:28
+msgid ""
+"Ao clicar em submeter está a aceitar que a imagem seja publicada no website."
+msgstr ""
+"By clicking submit you agree to the image being published on the website."
+
+#: .\templates\upload.html:35
+msgid "Carregar citação"
+msgstr "Upload quote"
+
+#: .\templates\upload.html:36
+msgid ""
+"A citação deve ser da autoria de Camões ou ser sobre o poeta e as suas obras."
+msgstr "The quote must be by Camões or be about the poet and his works."
+
+#: .\templates\video.html:12
+msgid "Gravações das oficinas realizadas"
+msgstr "Recordings of the workshops held"
+
+#: .\templates\video.html:29
+msgid "com"
+msgstr "with"

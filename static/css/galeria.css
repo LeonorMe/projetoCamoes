@@ -1,0 +1,85 @@
+/* Galeria */
+
+.box {
+  border-radius: var(--border-radius);
+  padding: 30px;
+  box-shadow: 0 4px 16px var(--shadow-dark);
+  transition: transform 0.3s ease;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--on-accent);
+  min-height: 250px; 
+}
+
+.flip-box-front{
+  background-image: url("");
+}
+
+.img {
+  border-radius: var(--border-radius);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Caixa exterior com perspectiva 3D */
+.flip-box {
+  background-color: transparent;
+  width: 100%;
+  height: 250px;
+  perspective: 1000px;
+}
+
+/* Interior rotativo */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1.2s;
+  transform-style: preserve-3d;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px var(--shadow-dark);
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Frente e verso */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Parte da frente com a imagem */
+.flip-box-front {
+  color: white;
+}
+
+/* Parte de trás com texto */
+.flip-box-back {
+  background-color: #ae7a26;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/*Fim Galeria*/

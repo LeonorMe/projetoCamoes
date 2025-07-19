@@ -1,0 +1,39 @@
+{% load i18n %} {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "head_links.html" with title="404" %}
+
+    <link rel="stylesheet" href="{% static 'css/404.css' %}" />
+  </head>
+  <body class="dark-theme">
+    {% include "header.html" %}
+
+    <section class="error_section">
+      <div class="error_div" id="error_text">
+        <h1>{{_("Página não encontrada")}}</h1>
+        <p>{{_("Código de erro: 404")}}</p>
+        <p>{{_("Por favor, verifique o URL ou navegue para outra página.")}}</p>
+
+        <div class="btns">
+          <div class="btn">
+            <a href="/">{{_("Voltar para à página inicial")}}</a>
+          </div>
+          <div class="btn">
+            <a href="sobre">{{_("Entra em contato conosco")}}</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="error_div">
+        <br /><br />
+        <img src="{% static 'images/404.jpg' %}" alt="ilustracao 404" />
+        <br /><br />
+        <p class="xs">"{{_("Por tantos mares navegados")}}</p>
+        <p class="xs">{{_("e com mapas ainda errados,")}}</p>
+        <p class="xs">{{_("pensavam a terra ter chegado,")}}</p>
+        <p class="xs">{{_("quando viram o 404...")}}"</p>
+      </div>
+    </section>
+  </body>
+</html>

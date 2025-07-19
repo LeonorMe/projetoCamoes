@@ -1,0 +1,62 @@
+<section class="info_section">
+    <div class="row">
+        <div class="col" id="info_about">
+            <h4>
+                {{_("Sobre este website")}}
+            </h4>
+            <p>
+                {{_("Este website tem como objetivo a divulgação da obra")}} <i>{{_("Os Lusíadas")}}</i> {{_("do poeta português Luís de Camões e de atividades relacionadas com a obra na ocasião do aniversário dos 500 anos do nascimento do poeta.")}}
+            </p>
+        </div>
+        <div class="col" id="info_subscribe">
+            <h4>
+                {{_("Fica a par das novidades")}}
+            </h4>
+            {% comment %}
+            <form action="subscribe" method="post">
+                {% csrf_token %}
+                <input type="text" placeholder="Inserir email" />
+                <button type="submit">Subscrever</button>
+            </form>
+            {% endcomment %}
+            
+            <form action="{% url 'subscribe' %}" method="post"> <!--/subscribe/-->
+            {% csrf_token %}
+                {{form_subs}}
+                <button type="submit">{{_("Subscrever")}}</button>
+                <!--input type="submit" values="Subscrever"-->
+            </form>
+            
+        </div>
+        <div class="col" id="info_nav">
+            <h4>
+                {{_("Saber mais")}}
+            </h4>
+            <nav>
+                <a class href="sobre">
+                    {{_("Sobre")}}
+                </a>
+                <a class href="sobre">
+                    {{_("Contacte-nos")}}
+                </a>
+                <a class href="login">
+                    {{_("Entrar")}}
+                </a>
+                <a class href="register">
+                    {{_("Registar")}}
+                </a>
+            </nav>
+        </div>
+        
+    </div>
+</section>
+
+<footer class="footer_section">
+    <p>
+        &copy; <span id="displayYear"></span> {{_("Camões 500 anos. Todos os direitos reservados.")}}
+    </p>
+</footer>
+
+{% load static %}
+<script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>

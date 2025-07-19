@@ -1,0 +1,19 @@
+{% extends './base.html' %} {% load i18n %} {% load static %} {% block head %}
+{% include "head_links.html" with title="Cronologia" %}
+<link rel="stylesheet" href="{% static 'css/dados_cronologia.css' %}" />
+{% endblock %} {% block main %}
+<div class="container">
+  <div class="card-detalhe">
+    <h2 id="titulo">{{e.title}}</h2>
+    <img
+      id="imagem"
+      src="{{e.img.url}}"
+      alt="{{_('Imagem ilustrativa do evento no ano')}} {{e.year}}"
+      class="imagem-detalhe"
+    />
+    <a href="{{e.img.url}}" class="img-link">{{_("Imagem retirada da web")}}</a>
+    <p id="texto">{{e.content}}</p>
+    <a href="cronologia" class="voltar">← {{_("Voltar")}}</a>
+  </div>
+</div>
+{% endblock %} 

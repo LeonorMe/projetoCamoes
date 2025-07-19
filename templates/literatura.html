@@ -1,0 +1,36 @@
+{% extends './base.html' %} {% load i18n %} {% load static %} {% block head %}
+{% include "head_links.html" with title="Literatura" %}
+
+<link rel="stylesheet" href="{% static 'css/literatura.css' %}" />
+{% endblock %} {% block main%}
+<h1>{{_("Literatura")}}</h1>
+<h2>{{_("Vida e obra do Poeta")}}</h2>
+
+<div class="pdf-gallery">
+  {% for b in books %}
+  <div class="pdf-item" onclick="openModal('{{b.url}}')">
+    <img src="{{b.img.url}}" alt="{{b.alt}}" class="pdf-cover" />
+    <div class="pdf-info">
+      <h4>{{b.title}}</h4>
+      <h5>{{_("de")}} {{b.author}}</h5>
+      <p>{{b.ogdate}}</p>
+    </div>
+  </div>
+  {% endfor %}
+
+  <div id="pdfModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <iframe
+        id="pdfFrame"
+        src=""
+        width="100%"
+        height="600px"
+        style="border: none"
+      ></iframe>
+    </div>
+  </div>
+</div>
+{% endblock %} {% block script%}
+<script src="{% static 'js/literatura.js' %}"></script>
+{% endblock %}

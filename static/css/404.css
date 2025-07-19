@@ -1,0 +1,65 @@
+.error_section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10vh 0vw;
+    width: 100%;
+    gap: 5vmin;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 992px) {
+    .error_section {
+        flex-direction: column;
+    }
+
+    .error_div img {
+        width: 100%;   
+    }
+}
+
+.error_div {
+    padding: 5vh 0vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 40vw;
+}
+
+.error_div img {
+    width: 60%;
+}
+
+#error_text{
+    gap: 3vh
+}
+
+#error_test .btns{
+    text-align: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em;
+}
+
+
+.error_div .btn{
+    background: var(--accent-variant);
+    color: var(--gs-light);
+    box-shadow: 0 0 10px var(--shadow-light);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin: 0.5em;
+}
+
+.error_div .btn a {
+    color: var(--gs-light);
+}
+
+.error_div .btn:hover{
+    background: var(--accent);
+}

@@ -1,0 +1,49 @@
+{% extends './base.html' %} 
+{% load i18n %} 
+{% load static %} 
+
+{% block head %}
+{% include "head_links.html" with title="Sobre" %} 
+<link rel="stylesheet" href="{% static 'css/about.css' %}" />
+{% endblock %} 
+
+{% block main %}
+<h1>{{_("Saber mais")}}</h1>
+
+<section class="about_section layout_padding-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="detail-box">
+          <div class="heading_container">
+            <h2>{{_("Sobre o projeto")}}</h2>
+          </div>
+          <p>{{_("Somos um grupo de estudantes do Instituto Superior de Engenharia de Lisboa (ISEL) no último ano da Licênciatura em Engenharia Informática e Multimédia. Como projeto final de licênciatura proposemo-nos a cronstuir um website dedicado à divulgação da obra")}} <i>{{_("Os Lusíadas")}}</i> {{_("do grande poeta português - Luís de Camões.")}}
+            
+            <br />
+            {{_("No contexto dos 500 anos do seu nascimento, o nosso objetivo é criar uma plataforma que não só apresente a obra de Camões, com a sua tradução para a língua inglesa, mas também mostrar como Camões ainda influência o mundo, em especial o artístico e literário, nos nossos dias.")}}
+            
+            <br />
+            {{_("Este projeto foi possivél com a colaboração da NOVA, ....")}}
+          </p>
+          <a href> {{_("Saber mais")}} </a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="img-box">
+          <a target="_black" href="https://www.isel.pt/"
+            ><img src="repo/isel.png" alt="{{_("ISEL")}}"
+          /></a>
+        </div>
+        <div class="img-box">
+          <a target="_black" href="https://www.isel.pt/"
+            ><img src="repo/isel.png" alt="{{_("NOVA")}}"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %} {% block script %} {% load static %}
+<script src="js/script.js"></script>
+{% endblock %}

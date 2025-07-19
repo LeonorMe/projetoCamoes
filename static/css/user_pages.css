@@ -1,0 +1,124 @@
+@import url('style.css');
+
+.dboard{
+    padding: 0vh 10vw;
+    /*min-height: 50vh;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.dboad_sec{
+    margin: 3vh 2vw;
+    width: 35vw;
+    background-color: var(--secondary);
+    padding: 3em 3em;
+    border-radius: var(--border-radius);
+}
+
+.dboad_sec_big {
+    margin: 3vh 2vw;
+    width: 80vw;
+    background-color: var(--secondary);
+    padding: 3em 3em;
+    border-radius: var(--border-radius);
+}
+
+.dboard h2{
+    margin-bottom: 0.5em;
+}
+
+/*---*/
+
+#drop-area {
+    width: calc(35vw - 3em * 2);
+    height: calc(calc(35vw - 4em) * 3 / 4);
+    background-color: var(--gs-light);
+    color: var(--gs-dark);
+    border: 2px dashed var(--accent);
+    border-radius: var(--border-radius);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#drop-area:hover {
+    background-color: var(--gs-light-variant);
+}
+
+#img-view {
+    text-align: center;
+    padding: 5em 1em;
+}
+
+#img-view span {
+    font-size: var(--font-xs);
+    color: var(--gs-dark-variant);
+}
+
+/*---*/
+.select-img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.select-img div{
+    width: 7vw;
+    height: auto;
+}
+
+.preview{
+    border-radius: var(--border-radius);
+    width: 5vw;
+    height: calc(5vw * 3 / 4);
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Messages */
+.messages{
+    width: 100%;
+}
+
+.messages li{
+    padding: 0.2em 1em;
+    margin: 0.3em 0;
+    border-radius: var(--border-radius);
+}
+
+.messages .debug{
+    background-color: var(--gray-dark);
+    color: var(--gray-light);
+}
+
+.messages .info{
+    background-color: var(--blue-light);
+    color: var(--white-blue);
+}
+
+.messages .success{
+    background-color: var(--green-dark);
+    color: var(--white-green);
+}
+
+.messages .warning{
+    background-color: var(--gold);
+    color: var(--black);
+}
+
+.messages .error{
+    background-color: var(--red);
+    color: var(--white-red);
+}
+
+/* --- Form --- 
+form .div {
+    display: flex;
+    flex-direction: row;
+} */

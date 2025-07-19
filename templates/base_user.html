@@ -1,0 +1,68 @@
+{% load i18n %} 
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    {% include "head_links.html" with title="Loggedin" %}
+    <link rel="stylesheet" href="{% static 'css/user_pages.css' %}" />
+</head>
+
+<body class="dark-theme">
+    {% include "header.html" %} 
+    
+    {% block h1 %}
+    <h1>{{_("Autenticado")}}</h1>
+    {% endblock %}
+
+    <main class="dboard">
+        {% if messages %}
+        <section class="dboad_sec_big">
+            <h2>{{_("Mensagens")}}</h2>
+            <div class="messages">
+            {% for message in messages %}
+            <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>
+                {{message}}
+            </li>
+            {% empty %}
+            <li>{{_("Não estão disponíveis mensagens.")}}</li>
+            {% endfor %}
+        </div>
+        </section>
+        {% endif %}
+
+        <!-- User profile -->
+        {% block userData %} 
+        {% endblock %}
+
+        <!-- Download -->
+        {% block downloadEstrofe %} 
+        {% endblock %} 
+
+        {% block downloadImage %} 
+        {% endblock %}
+
+        <!-- Upload -->
+        {% block addImage %} 
+        {% endblock %} 
+
+        {% block addQuote %} 
+        {% endblock %} 
+
+        {% block addPoem %} 
+        {% endblock %}
+    </main>
+
+    {% comment 'include "footer.html"' %}
+
+    <!-- Color theme toggle script-->
+    {% load static %}
+    <script src="{% static 'js/color_theme_presistence.js' %}"></script>
+    {% block script %} 
+    {% endblock %} 
+    {% comment "" %} 
+    {% load static %}
+    <script src="{% static 'js/upload.js' %}"></script>
+    {% endcomment %}
+</body>
+</html>

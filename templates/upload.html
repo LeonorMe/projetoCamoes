@@ -1,0 +1,46 @@
+{% extends './base_user.html' %} 
+{% load i18n %} 
+{% load static %} 
+
+{% block h1 %}
+<h1>{{_("Carregar")}}</h1>
+{% endblock %} 
+
+{% block addImage %}
+<section class="dboad_sec">
+  <h2>{{_("Carregar imagem")}}</h2>
+  <br />
+  <p>{{_("Atenção: a sua imagem será ajustada para ficar com a proporção 4:3.")}}</p>
+  <form method="POST">
+    <label for="img-input" id="drop-area">
+      <input type="file" accept="image/*" id="img-input" hidden />
+      <div id="img-view">
+        <p>{{_("Arraste e large ou clique aqui")}}<br/> {{_("para adicionar a imagem")}}</p>
+        <span>{{_("Adicone imagens apartir do ambiente de trabalho")}}</span>
+      </div>
+    </label>
+
+  </form>
+
+  <form method="post" id="form_img">
+    {% csrf_token %} {{ form_img.as_table }}
+    <button type="submit" name="submit_form_img">{{_("Submeter")}}</button>
+    <p>{{_("Ao clicar em submeter está a aceitar que a imagem seja publicada no website.")}}</p>
+  </form>
+</section>
+{% endblock %} 
+
+{% block addQuote %}
+<section class="dboad_sec">
+  <h2>{{_("Carregar citação")}}</h2>
+  <p>{{_("A citação deve ser da autoria de Camões ou ser sobre o poeta e as suas obras.")}}</p>
+
+  <form method="post" id="form_quote">
+    {% csrf_token %} {{ form_quote.as_table }}
+    <button type="submit" name="submit_form_quote">{{_("Submeter")}}</button>
+  </form>
+</section>
+{% endblock %} 
+
+{% block addPoem %} 
+{% endblock %}

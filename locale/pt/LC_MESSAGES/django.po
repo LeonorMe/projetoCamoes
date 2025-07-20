@@ -1,0 +1,371 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-20 12:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: .\mainPages\views.py:145
+msgid "Obrigada por subscrever!"
+msgstr ""
+
+#: .\projetoCamoes\settings.py:151
+msgid "Portuguese"
+msgstr "🇵🇹 Portuguese"
+
+#: .\projetoCamoes\settings.py:152
+msgid "English"
+msgstr "🇪🇳 English"
+
+#: .\templates\404.html:16
+msgid "Página não encontrada"
+msgstr ""
+
+#: .\templates\404.html:17
+msgid "Código de erro: 404"
+msgstr ""
+
+#: .\templates\404.html:18 .\templates\500.html:18
+msgid "Por favor, verifique o URL ou navegue para outra página."
+msgstr ""
+
+#: .\templates\404.html:22 .\templates\500.html:22
+msgid "Voltar para à página inicial"
+msgstr ""
+
+#: .\templates\404.html:25 .\templates\500.html:25
+msgid "Entra em contato conosco"
+msgstr ""
+
+#: .\templates\404.html:34
+msgid "Por tantos mares navegados"
+msgstr ""
+
+#: .\templates\404.html:35
+msgid "e com mapas ainda errados,"
+msgstr ""
+
+#: .\templates\404.html:36
+msgid "pensavam a terra ter chegado,"
+msgstr ""
+
+#: .\templates\404.html:37
+msgid "quando viram o 404..."
+msgstr ""
+
+#: .\templates\500.html:16
+msgid "Problema com o servidor"
+msgstr ""
+
+#: .\templates\500.html:17
+msgid "Código de erro: 500"
+msgstr ""
+
+#: .\templates\base_user.html:15
+msgid "Autenticado"
+msgstr ""
+
+#: .\templates\base_user.html:21
+msgid "Mensagens"
+msgstr ""
+
+#: .\templates\base_user.html:28
+msgid "Não estão disponíveis mensagens."
+msgstr ""
+
+#: .\templates\cronologia.html:13 .\templates\header.html:22
+msgid "Cronologia"
+msgstr ""
+
+#: .\templates\cronologia.html:14 .\templates\literatura.html:12
+msgid "Vida e obra do Poeta"
+msgstr ""
+
+#: .\templates\cronologia.html:20 .\templates\dados_cronologia.html:17
+msgid "Imagem ilustrativa do evento no ano"
+msgstr ""
+
+#: .\templates\cronologia.html:24
+msgid "Saber mais →"
+msgstr ""
+
+#: .\templates\dados_cronologia.html:20
+msgid "Imagem retirada da web"
+msgstr ""
+
+#: .\templates\dados_cronologia.html:22
+msgid "Voltar"
+msgstr ""
+
+#: .\templates\download.html:6 .\templates\download.html:24
+#: .\templates\download.html:29 .\templates\header.html:44
+msgid "Descarregar"
+msgstr ""
+
+#: .\templates\download.html:11
+msgid "Descarregar da Galeria"
+msgstr ""
+
+#: .\templates\download.html:15
+msgid "Selecione as imagens que pretende fazer download:"
+msgstr ""
+
+#: .\templates\footer.html:5
+msgid "Sobre este website"
+msgstr ""
+
+#: .\templates\footer.html:8
+msgid "Este website tem como objetivo a divulgação da obra"
+msgstr ""
+
+#: .\templates\footer.html:8 .\templates\galeria.html:13
+#: .\templates\header.html:19 .\templates\lusiadas.html:12
+#: .\templates\sobre.html:21
+msgid "Os Lusíadas"
+msgstr ""
+
+#: .\templates\footer.html:8
+msgid ""
+"do poeta português Luís de Camões e de atividades relacionadas com a obra na "
+"ocasião do aniversário dos 500 anos do nascimento do poeta."
+msgstr ""
+
+#: .\templates\footer.html:13
+msgid "Fica a par das novidades"
+msgstr ""
+
+#: .\templates\footer.html:27
+msgid "Subscrever"
+msgstr ""
+
+#: .\templates\footer.html:34 .\templates\sobre.html:11
+#: .\templates\sobre.html:29
+msgid "Saber mais"
+msgstr ""
+
+#: .\templates\footer.html:38
+msgid "Sobre"
+msgstr ""
+
+#: .\templates\footer.html:41
+msgid "Contacte-nos"
+msgstr ""
+
+#: .\templates\footer.html:44 .\templates\login.html:16
+#: .\templates\login.html:32 .\templates\login.html:73
+#: .\templates\register.html:63 .\templates\register.html:78
+#: .\templates\register.html:79
+msgid "Entrar"
+msgstr ""
+
+#: .\templates\footer.html:47 .\templates\login.html:67
+#: .\templates\login.html:68 .\templates\register.html:42
+#: .\templates\register.html:73
+msgid "Registar"
+msgstr ""
+
+#: .\templates\footer.html:57
+msgid "Camões 500 anos. Todos os direitos reservados."
+msgstr ""
+
+#: .\templates\galeria.html:12 .\templates\header.html:30
+msgid "Galeria"
+msgstr ""
+
+#: .\templates\galeria.html:13
+msgid "Projetos inspirados n'"
+msgstr ""
+
+#: .\templates\galeria.html:27 .\templates\lusiadas.html:13
+msgid "Canto"
+msgstr ""
+
+#: .\templates\galeria.html:30
+msgid "Autor(a):"
+msgstr ""
+
+#: .\templates\head_links.html:19
+msgid "Camões -"
+msgstr ""
+
+#: .\templates\header.html:8
+msgid "Logo do website"
+msgstr ""
+
+#: .\templates\header.html:26
+msgid "Oficinas"
+msgstr ""
+
+#: .\templates\header.html:29 .\templates\video.html:11
+msgid "Vídeos"
+msgstr ""
+
+#: .\templates\header.html:34 .\templates\literatura.html:11
+msgid "Literatura"
+msgstr ""
+
+#: .\templates\header.html:40
+msgid "Salve"
+msgstr ""
+
+#: .\templates\header.html:43 .\templates\profile.html:7
+msgid "Perfil"
+msgstr ""
+
+#: .\templates\header.html:45 .\templates\upload.html:6
+msgid "Carregar"
+msgstr ""
+
+#: .\templates\header.html:46
+msgid "Sair"
+msgstr ""
+
+#: .\templates\header.html:52
+msgid "Fazer parte"
+msgstr ""
+
+#: .\templates\header.html:62
+msgid "🇵🇹/🇪🇳"
+msgstr ""
+
+#: .\templates\index.html:14
+msgid "Imagem sobre Camões e as suas obras."
+msgstr ""
+
+#: .\templates\literatura.html:20
+msgid "de"
+msgstr ""
+
+#: .\templates\login.html:30
+msgid "Esqueceu-se da sua palavra-passe?"
+msgstr ""
+
+#: .\templates\login.html:65 .\templates\register.html:71
+msgid "Salve, Bem-vindo/a!"
+msgstr ""
+
+#: .\templates\login.html:66 .\templates\register.html:72
+msgid "Ainda não tem conta?"
+msgstr ""
+
+#: .\templates\login.html:71 .\templates\register.html:76
+msgid "Bem-vindo/a de volta!"
+msgstr ""
+
+#: .\templates\login.html:72 .\templates\register.html:77
+msgid "Já tem uma conta?"
+msgstr ""
+
+#: .\templates\lusiadas.html:15
+msgid "Fazer download página"
+msgstr ""
+
+#: .\templates\lusiadas.html:57
+msgid "Notas"
+msgstr ""
+
+#: .\templates\lusiadas.html:67
+msgid "Leitura"
+msgstr ""
+
+#: .\templates\profile.html:12
+msgid "Bem vindo/a"
+msgstr ""
+
+#: .\templates\profile.html:32
+msgid "Enviar"
+msgstr ""
+
+#: .\templates\sobre.html:19
+msgid "Sobre o projeto"
+msgstr ""
+
+#: .\templates\sobre.html:21
+msgid ""
+"Somos um grupo de estudantes do Instituto Superior de Engenharia de Lisboa "
+"(ISEL) no último ano da Licênciatura em Engenharia Informática e Multimédia. "
+"Como projeto final de licênciatura proposemo-nos a cronstuir um website "
+"dedicado à divulgação da obra"
+msgstr ""
+
+#: .\templates\sobre.html:21
+msgid "do grande poeta português - Luís de Camões."
+msgstr ""
+
+#: .\templates\sobre.html:24
+msgid ""
+"No contexto dos 500 anos do seu nascimento, o nosso objetivo é criar uma "
+"plataforma que não só apresente a obra de Camões, com a sua tradução para a "
+"língua inglesa, mas também mostrar como Camões ainda influência o mundo, em "
+"especial o artístico e literário, nos nossos dias."
+msgstr ""
+
+#: .\templates\sobre.html:27
+msgid "Este projeto foi possivél com a colaboração da NOVA, ...."
+msgstr ""
+
+#: .\templates\sobre.html:35
+msgid "ISEL"
+msgstr ""
+
+#: .\templates\sobre.html:40
+msgid "NOVA"
+msgstr ""
+
+#: .\templates\upload.html:11
+msgid "Carregar imagem"
+msgstr ""
+
+#: .\templates\upload.html:13
+msgid "Atenção: a sua imagem será ajustada para ficar com a proporção 4:3."
+msgstr ""
+
+#: .\templates\upload.html:18
+msgid "Arraste e large ou clique aqui"
+msgstr ""
+
+#: .\templates\upload.html:18
+msgid "para adicionar a imagem"
+msgstr ""
+
+#: .\templates\upload.html:19
+msgid "Adicone imagens apartir do ambiente de trabalho"
+msgstr ""
+
+#: .\templates\upload.html:27 .\templates\upload.html:40
+msgid "Submeter"
+msgstr ""
+
+#: .\templates\upload.html:28
+msgid ""
+"Ao clicar em submeter está a aceitar que a imagem seja publicada no website."
+msgstr ""
+
+#: .\templates\upload.html:35
+msgid "Carregar citação"
+msgstr ""
+
+#: .\templates\upload.html:36
+msgid ""
+"A citação deve ser da autoria de Camões ou ser sobre o poeta e as suas obras."
+msgstr ""
+
+#: .\templates\video.html:12
+msgid "Gravações das oficinas realizadas"
+msgstr ""
+
+#: .\templates\video.html:29
+msgid "com"
+msgstr ""

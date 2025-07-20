@@ -19,22 +19,22 @@ class Subscribed(models.Model):
         return self.email
 
 class Quote(models.Model):
+    
     STATUS = {
         "OK" : "Public, aproved!",
         "Waiting" : "Private, waiting for aproval..."
     }
     
-    content = models.CharField(max_length=500)
+    content = models.TextField(max_length=500)
     author = models.CharField(max_length=100)
     book = models.CharField(max_length=100, blank=True)
-    status = models.CharField(choices=STATUS, default="Waiting", blank=True)
+    status = models.CharField(choices=STATUS, default="Waiting")
     
     class Meta:
         verbose_name_plural = "Quotes"
 
     def __str__(self):
-        return f"{self.status} {self.author} {self.content}"
-        #return f"{self.firstname} {self.lastname}"
+        return f"({self.status}) {self.author} - {self.content}"
     
     def get_random():
         return Quote.objects.order_by("?").first()
@@ -65,15 +65,15 @@ class Lusiadas(models.Model):
     }
     
     canto = models.CharField(choices=CANTO, default=CANTO.get('I'))
-    estrofe_id = models.CharField(max_length=4, default=CANTO.get('1'))
-    estrofe_pt = models.TextField(max_length=500, default='estrofe')
+    estrofe_id = models.CharField(max_length=4)
+    estrofe_pt = models.TextField(max_length=500)
     estrofe_en = models.TextField(max_length=500, blank=True)
     estrofe_note = models.TextField(max_length=500, blank=True)
     estrofe_img = models.ImageField(default='fallback.jpg', blank=True)
-    audio_pt = models.FileField(upload_to='audio/', blank=True)
+    audio_pt = models.FileField(blank=True)
     
     class Meta:
-        verbose_name_plural = "Lusiadas"
+        verbose_name_plural = "Os Lusíadas"
     
     def __str__(self):
         return f"Canto {self.canto}: ({self.estrofe_id}) {self.estrofe_pt}"
@@ -105,14 +105,13 @@ class Image(models.Model):
         "Waiting" : "Private, waiting for aproval..."
     }
     
-    user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True) #models.CASCADE
-    img = models.ImageField(default='fallback.jpg') # , blank=True
-    author = models.CharField(max_length=100, blank=True, default="Anonymous")
+    img = models.ImageField(default='fallback.jpg')
+    author = models.CharField(max_length=100, default="Anonymous")
     title = models.CharField(max_length=100, blank=True)
-    canto = models.CharField(max_length=50, choices=CANTO, blank=True)
+    canto = models.CharField(choices=CANTO, blank=True)
     alt = models.CharField(max_length=100, blank=True, default="Image from workshop")
-    date = models.DateField(date.today, blank=True, null=True)
-    status = models.CharField(max_length=50, choices=STATUS, default="Waiting", blank=True)
+    date = models.DateField(date.today, blank=True)
+    status = models.CharField(choices=STATUS, default="Waiting")
     
     class Meta:
         verbose_name_plural = "Images"
@@ -135,21 +134,20 @@ class Video(models.Model):
         "Waiting" : "Private, waiting for aproval..."
     }
     
-    user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True) #models.CASCADE
     video = models.URLField(max_length = 200)
-    img = models.ImageField(default='fallback.jpg') # , blank=True
+    title = models.CharField(max_length=100)
+    img = models.ImageField(default='fallback.jpg')
     alt = models.CharField(max_length=100, blank=True, default="Capa do vídeo")
-    title = models.CharField(max_length=100, blank=False)
     ogdate = models.DateField(blank=True, default=date.today)
     author = models.CharField(max_length=100, blank=True, default="Anonymous")
-    date = models.DateField(date.today, blank=True, null=True)
-    status = models.CharField(max_length=50, choices=STATUS, default="Waiting", blank=True)
+    date = models.DateField(date.today, blank=True)
+    status = models.CharField(choices=STATUS, default="Waiting")
     
     class Meta:
         verbose_name_plural = "Videos"
         
     def __str__(self):
-        return f"{self.status} {self.title} {self.video}"
+        return f"({self.status}) {self.title} - {self.video}"
     
     def get_approved_by_date():
         return Video.objects.filter(status='OK').order_by('-ogdate')
@@ -160,14 +158,13 @@ class Book(models.Model):
         "Waiting" : "Private, waiting for aproval..."
     }
     
-    user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     url = models.URLField(max_length = 200)
     img = models.ImageField(default='fallback.jpg')
     alt = models.CharField(max_length=100, blank=True, default="Capa do PDF")
-    title = models.CharField(max_length=100, blank=False)
+    title = models.CharField(max_length=100)
     author = models.CharField(max_length=100, blank=True, default="Anonymous")
     ogdate = models.DateField(blank=True, default=date.today)
-    status = models.CharField(max_length=50, choices=STATUS, default="Waiting", blank=True)
+    status = models.CharField(choices=STATUS, default="Waiting", blank=True)
     
     class Meta:
         verbose_name_plural = "Books"

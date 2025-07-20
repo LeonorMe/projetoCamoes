@@ -21,9 +21,9 @@ from django.conf.urls.i18n import i18n_patterns
 from django.conf.urls.static import static
 from django.conf import settings
 
-from mainPages import views as main_views
-from authenticationApp import views as auth_views
-from userPages import views as user_views
+#from mainPages import views as main_views
+#from authenticationApp import views as auth_views
+#from userPages import views as user_views
 
 
 urlpatterns = [

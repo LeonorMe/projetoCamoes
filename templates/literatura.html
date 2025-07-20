@@ -1,8 +1,13 @@
-{% extends './base.html' %} {% load i18n %} {% load static %} {% block head %}
-{% include "head_links.html" with title="Literatura" %}
+{% extends 'base.html' %} 
+{% load i18n %} 
+{% load static %} 
 
+{% block head %}
+{% include "head_links.html" with title="Literatura" %}
 <link rel="stylesheet" href="{% static 'css/literatura.css' %}" />
-{% endblock %} {% block main%}
+{% endblock %} 
+
+{% block main%}
 <h1>{{_("Literatura")}}</h1>
 <h2>{{_("Vida e obra do Poeta")}}</h2>
 

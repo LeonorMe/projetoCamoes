@@ -57,12 +57,11 @@ SECURE_HSTS_SECONDS = 3600
 DEBUG = False
 #DEBUG = True
 
-ALLOWED_HOSTS = ['pythonanywhere.com', '.pythonanywhere.com'] # '*' 'localhost' 'camoes.netlify.app'
-#ALLOWED_HOSTS = [] # '*' 'camoes.netlify.app' #
-#ALLOWED_HOSTS = ['leonor3.pythonanywhere.com', '127.0.0.1']
+#ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = ['*', '127.0.0.1']
+ALLOWED_HOSTS = ['camoes500anos.pythonanywhere.com']
 
-# CSRF_TRUSTED_ORIGINS = ['https://leonor3.pythonanywhere.com']
-CSRF_TRUSTED_ORIGINS = ['https://*.pythonanywhere.com']
+CSRF_TRUSTED_ORIGINS = ['https://camoes500anos.pythonanywhere.com']
 
 # Application definition
 

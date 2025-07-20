@@ -1,7 +1,13 @@
-{% extends './base.html' %} {% load i18n %} {% load static %} {% block head %}
+{% extends 'base.html' %} 
+{% load i18n %} 
+{% load static %} 
+
+{% block head %}
 {% include "head_links.html" with title="Cronologia" %}
 <link rel="stylesheet" href="{% static 'css/dados_cronologia.css' %}" />
-{% endblock %} {% block main %}
+{% endblock %} 
+
+{% block main %}
 <div class="container">
   <div class="card-detalhe">
     <h2 id="titulo">{{e.title}}</h2>

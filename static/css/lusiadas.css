@@ -1,17 +1,24 @@
 .book{
     background-color: var(--primary-variant);
-    height: 75vh;
+    height: 60vh;
     width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: start;
     padding-top: 3vh;
+    margin-bottom: 5vh;
 }
 
-#book-cover {
+#cover-anim{
+    height: 55vh;
+}
+
+#book-cover{
+    height: 55vh;
     padding: 0;
     box-shadow: 0.2em 0.5em 0.5em var(--shadow-dark);
+    border-radius: 0 1.4em 1.4rem 0;
 }
 #book-cover:hover {
     transform: translateY(-5px);
@@ -41,8 +48,8 @@
 }
 
 .page, .page-turn, .page-turn-back{
-    min-height: 60vh;
-    min-width: calc(60vh * 4 / 5);
+    height: 55vh;
+    width: calc(55vh * 4 / 5);
     background-color: var(--gs-light);
     color: var(--gs-dark-variant);
     border: var(--accent) solid 4px;
@@ -157,7 +164,7 @@
     width: auto;
     height: 15vh;
     position: absolute;
-    bottom: 0vh;
+    bottom: 10vh;
     right: 40vw;
     padding: 1em 1em;
     animation: audio ease-in-out 1s;

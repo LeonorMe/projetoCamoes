@@ -83,21 +83,19 @@ nav a .active {
 
 .custom_nav-container .navbar-toggler {
     outline: none;
-}
-
-.custom_nav-container .navbar-toggler {
+    border: none;
     padding: 0;
-    width: 37px;
-    height: 42px;
+    width: 2em;
+    height: 2em;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
 
 .custom_nav-container .navbar-toggler span {
     display: block;
-    width: 35px;
+    width: 2em;
     height: 4px;
-    background-color: var(--gs-light);
+    background-color: var(--white-blue);
     margin: 7px 0;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -113,7 +111,7 @@ nav a .active {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: var(--gs-light);
+    background-color: var(--white-blue);
     top: -10px;
     border-radius: var(--border-radius);
     -webkit-transition: all 0.3s;
@@ -174,7 +172,7 @@ nav a .active {
 }
 
 .quote_btn-container a {
-    color: var(--gs-light);
+    color: var(--white-blue);
     text-transform: uppercase;
 }
 
@@ -186,6 +184,12 @@ nav a .active {
     height: 100%;
     margin-top: 0.5rem;
     align-items: center;
+    justify-content: end;
+}
+
+.dropdown-menu.show {
+    display: block;
+    /*background-color: var(--primary);*/
 }
 
 /* --- header_loggedin ---*/

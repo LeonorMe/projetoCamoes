@@ -14,10 +14,19 @@
   }
 
   #navbarSupportedContent {
-    padding: 15px 0 25px 0;
     background-color: var(--primary);
     border-radius: var(--border-radius);
-    padding: 2rem;
+    padding: 2em;
+    height: auto;
+    align-items: start;
+    justify-content: center;
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: end;
+    align-items: center;
   }
 
   .quote_btn-container {

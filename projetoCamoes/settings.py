@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/5.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
-
 from pathlib import Path
 import os
 #import environ
@@ -155,8 +154,8 @@ USE_I18N = True # Uses internationalization
 
 USE_TZ = True
 
-LOCALE_PATHS = [
-    os.path.join(os.path.dirname(__file__), "locale"), # deploy # TODO
+LOCALE_PATHS = [ 
+    os.path.join(BASE_DIR, 'locale/')
 ]
 #"/LEIM2/6sem/Projeto/LEIM-Projeto-Camoes/projetoCamoes/locale",
 #os.path.join(BASE_DIR, 'locale/')

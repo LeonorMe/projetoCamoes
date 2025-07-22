@@ -1,5 +1,4 @@
 
-#'' Production
 from pathlib import Path
 import os
 #import environ
@@ -208,4 +207,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # redirecionar Login e Logout
 #LOGIN_REDIRECT_URL = "mainPages:dashboard_contrib"
 #LOGOUT_REDIRECT_URL = "mainPages:login"
-#''

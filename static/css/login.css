@@ -18,7 +18,7 @@ body{
 .container{
     position: relative;
     width: 80vw;
-    height: 60vh;
+    height: 70vh;
     background: var(--gs-light);
     border-radius: var(--border-radius);
     box-shadow: 0 0 30px var(--shadow-dark);

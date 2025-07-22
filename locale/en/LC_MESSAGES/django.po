@@ -1,18 +1,18 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-18 19:47+0100\n"
+"POT-Creation-Date: 2025-07-22 10:30+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language-Team: EN <LL@li.org>\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,55 +22,55 @@ msgstr ""
 msgid "Obrigada por subscrever!"
 msgstr "Tank you for subscribing!"
 
-#: .\projetoCamoes\settings.py:137
+#: .\projetoCamoes\settings.py:94
 msgid "Portuguese"
 msgstr "🇵🇹 Português"
 
-#: .\projetoCamoes\settings.py:138
+#: .\projetoCamoes\settings.py:95
 msgid "English"
-msgstr "🇪🇳 Inglês"
+msgstr "🇬🇧 Inglês"
 
-#: .\templates\404.html:14
+#: .\templates\404.html:16
 msgid "Página não encontrada"
 msgstr "Page not found"
 
-#: .\templates\404.html:15
+#: .\templates\404.html:17
 msgid "Código de erro: 404"
 msgstr "Error code: 404"
 
-#: .\templates\404.html:16 .\templates\500.html:16
+#: .\templates\404.html:18 .\templates\500.html:18
 msgid "Por favor, verifique o URL ou navegue para outra página."
 msgstr "Please check the URL or navigate to another page."
 
-#: .\templates\404.html:20 .\templates\500.html:20
+#: .\templates\404.html:22 .\templates\500.html:22
 msgid "Voltar para à página inicial"
 msgstr "Back to home page"
 
-#: .\templates\404.html:23 .\templates\500.html:23
+#: .\templates\404.html:25 .\templates\500.html:25
 msgid "Entra em contato conosco"
 msgstr "Contact us"
 
-#: .\templates\404.html:32
+#: .\templates\404.html:34
 msgid "Por tantos mares navegados"
 msgstr "Through so many seas sailed"
 
-#: .\templates\404.html:33
+#: .\templates\404.html:35
 msgid "e com mapas ainda errados,"
 msgstr "and with maps still wrong,"
 
-#: .\templates\404.html:34
+#: .\templates\404.html:36
 msgid "pensavam a terra ter chegado,"
 msgstr "thought the land had arrived,"
 
-#: .\templates\404.html:35
+#: .\templates\404.html:37
 msgid "quando viram o 404..."
 msgstr "when they saw the 404..."
 
-#: .\templates\500.html:14
+#: .\templates\500.html:16
 msgid "Problema com o servidor"
 msgstr "Problem with the server"
 
-#: .\templates\500.html:15
+#: .\templates\500.html:17
 msgid "Código de erro: 500"
 msgstr "Error code: 500"
 
@@ -90,11 +90,11 @@ msgstr "No messages are available."
 msgid "Cronologia"
 msgstr "Chronology"
 
-#: .\templates\cronologia.html:14 .\templates\literatura.html:7
+#: .\templates\cronologia.html:14 .\templates\literatura.html:12
 msgid "Vida e obra do Poeta"
 msgstr "Life and work of the poet"
 
-#: .\templates\cronologia.html:20 .\templates\dados_cronologia.html:11
+#: .\templates\cronologia.html:20 .\templates\dados_cronologia.html:17
 msgid "Imagem ilustrativa do evento no ano"
 msgstr "Illustrative image of the event in the year"
 
@@ -102,11 +102,11 @@ msgstr "Illustrative image of the event in the year"
 msgid "Saber mais →"
 msgstr "Learn more →"
 
-#: .\templates\dados_cronologia.html:14
+#: .\templates\dados_cronologia.html:20
 msgid "Imagem retirada da web"
 msgstr "Image taken from the web"
 
-#: .\templates\dados_cronologia.html:16
+#: .\templates\dados_cronologia.html:22
 msgid "Voltar"
 msgstr "Go back"
 
@@ -166,16 +166,14 @@ msgstr "About"
 msgid "Contacte-nos"
 msgstr "Contact us"
 
-#: .\templates\footer.html:44 .\templates\login.html:15
-#: .\templates\login.html:31 .\templates\login.html:72
-#: .\templates\register.html:61 .\templates\register.html:76
-#: .\templates\register.html:77
+#: .\templates\footer.html:44 .\templates\login.html:17
+#: .\templates\login.html:33 .\templates\register.html:39
+#: .\templates\register.html:48
 msgid "Entrar"
 msgstr "Login"
 
-#: .\templates\footer.html:47 .\templates\login.html:66
-#: .\templates\login.html:67 .\templates\register.html:40
-#: .\templates\register.html:71
+#: .\templates\footer.html:47 .\templates\login.html:44
+#: .\templates\register.html:17 .\templates\register.html:53
 msgid "Registar"
 msgstr "Register"
 
@@ -199,7 +197,7 @@ msgstr "Canto"
 msgid "Autor(a):"
 msgstr "Author(s):"
 
-#: .\templates\head_links.html:18
+#: .\templates\head_links.html:19
 msgid "Camões -"
 msgstr "Camões -"
 
@@ -215,7 +213,7 @@ msgstr "Workshops"
 msgid "Vídeos"
 msgstr "Videos"
 
-#: .\templates\header.html:34 .\templates\literatura.html:6
+#: .\templates\header.html:34 .\templates\literatura.html:11
 msgid "Literatura"
 msgstr "Literature"
 
@@ -247,39 +245,35 @@ msgstr "🇪🇳/🇵🇹"
 msgid "Imagem sobre Camões e as suas obras."
 msgstr "Image about Camões and his works."
 
-#: .\templates\literatura.html:15
+#: .\templates\literatura.html:20
 msgid "de"
 msgstr "from"
 
-#: .\templates\login.html:29
+#: .\templates\login.html:19 .\templates\register.html:19
+msgid "Nome de"
+msgstr " "
+
+#: .\templates\login.html:31
 msgid "Esqueceu-se da sua palavra-passe?"
 msgstr "Forgot your password?"
 
-#: .\templates\login.html:64 .\templates\register.html:69
+#: .\templates\login.html:42 .\templates\register.html:51
 msgid "Salve, Bem-vindo/a!"
 msgstr "Hail, Welcome!"
 
-#: .\templates\login.html:65 .\templates\register.html:70
+#: .\templates\login.html:43 .\templates\register.html:52
 msgid "Ainda não tem conta?"
 msgstr "Don't have an account yet?"
-
-#: .\templates\login.html:70 .\templates\register.html:74
-msgid "Bem-vindo/a de volta!"
-msgstr "Welcome back!"
-
-#: .\templates\login.html:71 .\templates\register.html:75
-msgid "Já tem uma conta?"
-msgstr "Already have an account?"
 
 #: .\templates\lusiadas.html:15
 msgid "Fazer download página"
 msgstr "Download page"
 
-#: .\templates\lusiadas.html:57
+#: .\templates\lusiadas.html:65
 msgid "Notas"
 msgstr "Notes"
 
-#: .\templates\lusiadas.html:67
+#: .\templates\lusiadas.html:71
 msgid "Leitura"
 msgstr "Reading"
 
@@ -290,6 +284,14 @@ msgstr "Welcome"
 #: .\templates\profile.html:32
 msgid "Enviar"
 msgstr "Submit"
+
+#: .\templates\register.html:46
+msgid "Bem-vindo/a de volta!"
+msgstr "Welcome back!"
+
+#: .\templates\register.html:47
+msgid "Já tem uma conta?"
+msgstr "Already have an account?"
 
 #: .\templates\sobre.html:19
 msgid "Sobre o projeto"

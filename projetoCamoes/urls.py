@@ -21,11 +21,6 @@ from django.conf.urls.i18n import i18n_patterns
 from django.conf.urls.static import static
 from django.conf import settings
 
-#from mainPages import views as main_views
-#from authenticationApp import views as auth_views
-#from userPages import views as user_views
-
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('mainPages.urls')),
@@ -35,20 +30,9 @@ urlpatterns = [
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-
-#  activate("en")
-#  activate("pt")
-'''
-urlpatterns =[
-    path("<slug:slug>/", include('mainPages.urls')), #namespace="main"
-    path("<slug:slug>/", include('authenticationApp.urls')),
-    path("<slug:slug>/", include('userPages.urls')),
-] #+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-'''
-
 urlpatterns += i18n_patterns(
     path("", include('mainPages.urls')),
     path("", include('authenticationApp.urls')),
     path("",  include('userPages.urls')),
-    prefix_default_language=False
+    prefix_default_language=True
 )

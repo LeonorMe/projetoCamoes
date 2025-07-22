@@ -1,296 +1,301 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-20 12:45+0100\n"
+"POT-Creation-Date: 2025-07-22 10:30+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language-Team: PT <LL@li.org>\n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
 #: .\mainPages\views.py:145
 msgid "Obrigada por subscrever!"
-msgstr ""
+msgstr "Obrigada por subscrever!"
 
-#: .\projetoCamoes\settings.py:151
+#: .\projetoCamoes\settings.py:94
 msgid "Portuguese"
 msgstr "🇵🇹 Portuguese"
 
-#: .\projetoCamoes\settings.py:152
+#: .\projetoCamoes\settings.py:95
 msgid "English"
-msgstr "🇪🇳 English"
+msgstr "🇬🇧 English"
 
 #: .\templates\404.html:16
 msgid "Página não encontrada"
-msgstr ""
+msgstr "Página não encontrada"
 
 #: .\templates\404.html:17
 msgid "Código de erro: 404"
-msgstr ""
+msgstr "Código de erro: 404"
 
 #: .\templates\404.html:18 .\templates\500.html:18
 msgid "Por favor, verifique o URL ou navegue para outra página."
-msgstr ""
+msgstr "Por favor, verifique o URL ou navegue para outra página."
 
 #: .\templates\404.html:22 .\templates\500.html:22
 msgid "Voltar para à página inicial"
-msgstr ""
+msgstr "Voltar para à página inicial"
 
 #: .\templates\404.html:25 .\templates\500.html:25
 msgid "Entra em contato conosco"
-msgstr ""
+msgstr "Entra em contato conosco"
 
 #: .\templates\404.html:34
 msgid "Por tantos mares navegados"
-msgstr ""
+msgstr "Por tantos mares navegados"
 
 #: .\templates\404.html:35
 msgid "e com mapas ainda errados,"
-msgstr ""
+msgstr "e com mapas ainda errados,"
 
 #: .\templates\404.html:36
 msgid "pensavam a terra ter chegado,"
-msgstr ""
+msgstr "pensavam a terra ter chegado,"
 
 #: .\templates\404.html:37
 msgid "quando viram o 404..."
-msgstr ""
+msgstr "quando viram o 404..."
 
 #: .\templates\500.html:16
 msgid "Problema com o servidor"
-msgstr ""
+msgstr "Problema com o servidor"
 
 #: .\templates\500.html:17
 msgid "Código de erro: 500"
-msgstr ""
+msgstr "Código de erro: 500"
 
 #: .\templates\base_user.html:15
 msgid "Autenticado"
-msgstr ""
+msgstr "Autenticado"
 
 #: .\templates\base_user.html:21
 msgid "Mensagens"
-msgstr ""
+msgstr "Mensagens"
 
 #: .\templates\base_user.html:28
 msgid "Não estão disponíveis mensagens."
-msgstr ""
+msgstr "Não estão disponíveis mensagens."
 
 #: .\templates\cronologia.html:13 .\templates\header.html:22
 msgid "Cronologia"
-msgstr ""
+msgstr "Cronologia"
 
 #: .\templates\cronologia.html:14 .\templates\literatura.html:12
 msgid "Vida e obra do Poeta"
-msgstr ""
+msgstr "Vida e obra do Poeta"
 
 #: .\templates\cronologia.html:20 .\templates\dados_cronologia.html:17
 msgid "Imagem ilustrativa do evento no ano"
-msgstr ""
+msgstr "Imagem ilustrativa do evento no ano"
 
 #: .\templates\cronologia.html:24
 msgid "Saber mais →"
-msgstr ""
+msgstr "Saber mais →"
 
 #: .\templates\dados_cronologia.html:20
 msgid "Imagem retirada da web"
-msgstr ""
+msgstr "Imagem retirada da web"
 
 #: .\templates\dados_cronologia.html:22
 msgid "Voltar"
-msgstr ""
+msgstr "Voltar"
 
 #: .\templates\download.html:6 .\templates\download.html:24
 #: .\templates\download.html:29 .\templates\header.html:44
 msgid "Descarregar"
-msgstr ""
+msgstr "Descarregar"
 
 #: .\templates\download.html:11
 msgid "Descarregar da Galeria"
-msgstr ""
+msgstr "Descarregar da Galeria"
 
 #: .\templates\download.html:15
 msgid "Selecione as imagens que pretende fazer download:"
-msgstr ""
+msgstr "Selecione as imagens que pretende fazer download:"
 
 #: .\templates\footer.html:5
 msgid "Sobre este website"
-msgstr ""
+msgstr "Sobre este website"
 
 #: .\templates\footer.html:8
 msgid "Este website tem como objetivo a divulgação da obra"
-msgstr ""
+msgstr "Este website tem como objetivo a divulgação da obra"
 
 #: .\templates\footer.html:8 .\templates\galeria.html:13
 #: .\templates\header.html:19 .\templates\lusiadas.html:12
 #: .\templates\sobre.html:21
 msgid "Os Lusíadas"
-msgstr ""
+msgstr "Os Lusíadas"
 
 #: .\templates\footer.html:8
 msgid ""
 "do poeta português Luís de Camões e de atividades relacionadas com a obra na "
 "ocasião do aniversário dos 500 anos do nascimento do poeta."
 msgstr ""
+"do poeta português Luís de Camões e de atividades relacionadas com a obra na "
+"ocasião do aniversário dos 500 anos do nascimento do poeta."
 
 #: .\templates\footer.html:13
 msgid "Fica a par das novidades"
-msgstr ""
+msgstr "Fica a par das novidades"
 
 #: .\templates\footer.html:27
 msgid "Subscrever"
-msgstr ""
+msgstr "Subscrever"
 
 #: .\templates\footer.html:34 .\templates\sobre.html:11
 #: .\templates\sobre.html:29
 msgid "Saber mais"
-msgstr ""
+msgstr "Saber mais"
 
 #: .\templates\footer.html:38
 msgid "Sobre"
-msgstr ""
+msgstr "Sobre"
 
 #: .\templates\footer.html:41
 msgid "Contacte-nos"
-msgstr ""
+msgstr "Contacte-nos"
 
-#: .\templates\footer.html:44 .\templates\login.html:16
-#: .\templates\login.html:32 .\templates\login.html:73
-#: .\templates\register.html:63 .\templates\register.html:78
-#: .\templates\register.html:79
+#: .\templates\footer.html:44 .\templates\login.html:17
+#: .\templates\login.html:33 .\templates\register.html:39
+#: .\templates\register.html:48
 msgid "Entrar"
-msgstr ""
+msgstr "Entrar"
 
-#: .\templates\footer.html:47 .\templates\login.html:67
-#: .\templates\login.html:68 .\templates\register.html:42
-#: .\templates\register.html:73
+#: .\templates\footer.html:47 .\templates\login.html:44
+#: .\templates\register.html:17 .\templates\register.html:53
 msgid "Registar"
-msgstr ""
+msgstr "Registar"
 
 #: .\templates\footer.html:57
 msgid "Camões 500 anos. Todos os direitos reservados."
-msgstr ""
+msgstr "Camões 500 anos. Todos os direitos reservados."
 
 #: .\templates\galeria.html:12 .\templates\header.html:30
 msgid "Galeria"
-msgstr ""
+msgstr "Galeria"
 
 #: .\templates\galeria.html:13
 msgid "Projetos inspirados n'"
-msgstr ""
+msgstr "Projetos inspirados n'"
 
 #: .\templates\galeria.html:27 .\templates\lusiadas.html:13
 msgid "Canto"
-msgstr ""
+msgstr "Canto"
 
 #: .\templates\galeria.html:30
 msgid "Autor(a):"
-msgstr ""
+msgstr "Autor(a):"
 
 #: .\templates\head_links.html:19
 msgid "Camões -"
-msgstr ""
+msgstr "Camões -"
 
 #: .\templates\header.html:8
 msgid "Logo do website"
-msgstr ""
+msgstr "Logo do website"
 
 #: .\templates\header.html:26
 msgid "Oficinas"
-msgstr ""
+msgstr "Oficinas"
 
 #: .\templates\header.html:29 .\templates\video.html:11
 msgid "Vídeos"
-msgstr ""
+msgstr "Vídeos"
 
 #: .\templates\header.html:34 .\templates\literatura.html:11
 msgid "Literatura"
-msgstr ""
+msgstr "Literatura"
 
 #: .\templates\header.html:40
 msgid "Salve"
-msgstr ""
+msgstr "Salve"
 
 #: .\templates\header.html:43 .\templates\profile.html:7
 msgid "Perfil"
-msgstr ""
+msgstr "Perfil"
 
 #: .\templates\header.html:45 .\templates\upload.html:6
 msgid "Carregar"
-msgstr ""
+msgstr "Carregar"
 
 #: .\templates\header.html:46
 msgid "Sair"
-msgstr ""
+msgstr "Sair"
 
 #: .\templates\header.html:52
 msgid "Fazer parte"
-msgstr ""
+msgstr "Fazer parte"
 
 #: .\templates\header.html:62
 msgid "🇵🇹/🇪🇳"
-msgstr ""
+msgstr "🇵🇹/🇪🇳"
 
 #: .\templates\index.html:14
 msgid "Imagem sobre Camões e as suas obras."
-msgstr ""
+msgstr "Imagem sobre Camões e as suas obras."
 
 #: .\templates\literatura.html:20
 msgid "de"
-msgstr ""
+msgstr "de"
 
-#: .\templates\login.html:30
+#: .\templates\login.html:19 .\templates\register.html:19
+msgid "Nome de"
+msgstr "Nome de"
+
+#: .\templates\login.html:31
 msgid "Esqueceu-se da sua palavra-passe?"
-msgstr ""
+msgstr "Esqueceu-se da sua palavra-passe?"
 
-#: .\templates\login.html:65 .\templates\register.html:71
+#: .\templates\login.html:42 .\templates\register.html:51
 msgid "Salve, Bem-vindo/a!"
-msgstr ""
+msgstr "Salve, Bem-vindo/a!"
 
-#: .\templates\login.html:66 .\templates\register.html:72
+#: .\templates\login.html:43 .\templates\register.html:52
 msgid "Ainda não tem conta?"
-msgstr ""
-
-#: .\templates\login.html:71 .\templates\register.html:76
-msgid "Bem-vindo/a de volta!"
-msgstr ""
-
-#: .\templates\login.html:72 .\templates\register.html:77
-msgid "Já tem uma conta?"
-msgstr ""
+msgstr "Ainda não tem conta?"
 
 #: .\templates\lusiadas.html:15
 msgid "Fazer download página"
-msgstr ""
+msgstr "Fazer download página"
 
-#: .\templates\lusiadas.html:57
+#: .\templates\lusiadas.html:65
 msgid "Notas"
-msgstr ""
+msgstr "Notas"
 
-#: .\templates\lusiadas.html:67
+#: .\templates\lusiadas.html:71
 msgid "Leitura"
-msgstr ""
+msgstr "Leitura"
 
 #: .\templates\profile.html:12
 msgid "Bem vindo/a"
-msgstr ""
+msgstr "Bem vindo/a"
 
 #: .\templates\profile.html:32
 msgid "Enviar"
-msgstr ""
+msgstr "Enviar"
+
+#: .\templates\register.html:46
+msgid "Bem-vindo/a de volta!"
+msgstr "Bem-vindo/a de volta!"
+
+#: .\templates\register.html:47
+msgid "Já tem uma conta?"
+msgstr "Já tem uma conta?"
 
 #: .\templates\sobre.html:19
 msgid "Sobre o projeto"
-msgstr ""
+msgstr "Sobre o projeto"
 
 #: .\templates\sobre.html:21
 msgid ""
@@ -299,10 +304,14 @@ msgid ""
 "Como projeto final de licênciatura proposemo-nos a cronstuir um website "
 "dedicado à divulgação da obra"
 msgstr ""
+"Somos um grupo de estudantes do Instituto Superior de Engenharia de Lisboa "
+"(ISEL) no último ano da Licênciatura em Engenharia Informática e Multimédia. "
+"Como projeto final de licênciatura proposemo-nos a cronstuir um website "
+"dedicado à divulgação da obra"
 
 #: .\templates\sobre.html:21
 msgid "do grande poeta português - Luís de Camões."
-msgstr ""
+msgstr "do grande poeta português - Luís de Camões."
 
 #: .\templates\sobre.html:24
 msgid ""
@@ -311,61 +320,67 @@ msgid ""
 "língua inglesa, mas também mostrar como Camões ainda influência o mundo, em "
 "especial o artístico e literário, nos nossos dias."
 msgstr ""
+"No contexto dos 500 anos do seu nascimento, o nosso objetivo é criar uma "
+"plataforma que não só apresente a obra de Camões, com a sua tradução para a "
+"língua inglesa, mas também mostrar como Camões ainda influência o mundo, em "
+"especial o artístico e literário, nos nossos dias."
 
 #: .\templates\sobre.html:27
-msgid "Este projeto foi possivél com a colaboração da NOVA, ...."
-msgstr ""
+msgid "Este projeto foi possivél com a colaboração da NOVA, ..."
+msgstr "Este projeto foi possivél com a colaboração da NOVA, ..."
 
 #: .\templates\sobre.html:35
 msgid "ISEL"
-msgstr ""
+msgstr "ISEL"
 
 #: .\templates\sobre.html:40
 msgid "NOVA"
-msgstr ""
+msgstr "NOVA"
 
 #: .\templates\upload.html:11
 msgid "Carregar imagem"
-msgstr ""
+msgstr "Carregar imagem"
 
 #: .\templates\upload.html:13
 msgid "Atenção: a sua imagem será ajustada para ficar com a proporção 4:3."
-msgstr ""
+msgstr "Atenção: a sua imagem será ajustada para ficar com a proporção 4:3."
 
 #: .\templates\upload.html:18
 msgid "Arraste e large ou clique aqui"
-msgstr ""
+msgstr "Arraste e large ou clique aqui"
 
 #: .\templates\upload.html:18
 msgid "para adicionar a imagem"
-msgstr ""
+msgstr "para adicionar a imagem"
 
 #: .\templates\upload.html:19
 msgid "Adicone imagens apartir do ambiente de trabalho"
-msgstr ""
+msgstr "Adicone imagens apartir do ambiente de trabalho"
 
 #: .\templates\upload.html:27 .\templates\upload.html:40
 msgid "Submeter"
-msgstr ""
+msgstr "Submeter"
 
 #: .\templates\upload.html:28
 msgid ""
 "Ao clicar em submeter está a aceitar que a imagem seja publicada no website."
 msgstr ""
+"Ao clicar em submeter está a aceitar que a imagem seja publicada no website."
 
 #: .\templates\upload.html:35
 msgid "Carregar citação"
-msgstr ""
+msgstr "Carregar citação"
 
 #: .\templates\upload.html:36
 msgid ""
 "A citação deve ser da autoria de Camões ou ser sobre o poeta e as suas obras."
 msgstr ""
+"A citação deve ser da autoria de Camões ou ser sobre o poeta e as suas obras."
 
 #: .\templates\video.html:12
 msgid "Gravações das oficinas realizadas"
-msgstr ""
+msgstr "Gravações das oficinas realizadas"
 
 #: .\templates\video.html:29
 msgid "com"
-msgstr ""
+msgstr "com"

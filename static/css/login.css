@@ -134,6 +134,7 @@ form{
     justify-content: center;
     align-items: center;
     background-color: var(--accent-variant);
+    padding: 2em;
 }
 
 .container.login .toggle-box{
@@ -148,6 +149,7 @@ form{
     .container {
         display: flex;
         flex-direction: column;
+        width: 90vw;
         margin: 5vh 5vw;
     }
     .container.register {
@@ -163,7 +165,6 @@ form{
 
     .toggle-box{
         width: 100%;
-        padding: 2em 0;
     }
     
     .container.login .toggle-box {

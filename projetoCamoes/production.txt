@@ -1,4 +1,3 @@
-
 from pathlib import Path
 import os
 #import environ
@@ -134,8 +133,8 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = "pt"
 
 LANGUAGES = [
-    ("pt", _("Portuguese")),
     ("en", _("English")),
+    ("pt", _("Portuguese")),
 ] # 'pt-pt' #'en-us'
 
 TIME_ZONE = 'UTC'
@@ -144,8 +143,8 @@ USE_I18N = True # Uses internationalization
 
 USE_TZ = True
 
-LOCALE_PATHS = [
-    os.path.join(os.path.dirname(__file__), "locale"), # deploy # TODO
+LOCALE_PATHS = [ 
+    os.path.join(BASE_DIR, 'locale/')
 ]
 #"/LEIM2/6sem/Projeto/LEIM-Projeto-Camoes/projetoCamoes/locale",
 #os.path.join(BASE_DIR, 'locale/')

@@ -229,14 +229,15 @@
 @media (max-width: 992px) {
     .book{
         height: auto;
+        width: auto;
         flex-direction: column;
         align-items: center;
     }
     .page {
-        height: 60vh;
-        width: calc(60vh * 4 / 5);
+        height: auto;
+        width: 80vw;
         padding: 3em 1em;
-        font-size: var(--font-l);
+        font-size: var(--font-m);
     }
     .cards {
         display: flex;
@@ -246,7 +247,7 @@
         margin-bottom: 5vh;
     }
     .card{
-        width: 60vw;
+        width: 80vw;
         height: auto;
     }
 

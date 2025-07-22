@@ -250,5 +250,50 @@
         width: 80vw;
         height: auto;
     }
+}
 
+@media (max-height: 850px) {
+    .book {
+        height: auto;
+        width: auto;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .page {
+        height: auto;
+        width: 40vw;
+        padding: 3em 1em;
+        font-size: var(--font-m);
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2em;
+        margin-bottom: 5vh;
+    }
+
+    .notes {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 30vw;
+        animation: none;
+    }
+
+    .illustration {
+        position: relative;
+        top: 0;
+        left: 0;
+        animation: none;
+    }
+
+    .audio {
+        position: relative;
+        top: 0;
+        left: 0;
+        animation: none;
+    }
 }

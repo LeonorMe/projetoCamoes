@@ -125,7 +125,7 @@ main{
 }*/
 
 h1{
-  margin-top: calc(var(--font-xxl) / 2) ;
+  margin-top: calc(var(--font-l) / 2) ;
   font-size: var(--font-xxl);
   color: var(--accent-variant);
   text-transform: uppercase;

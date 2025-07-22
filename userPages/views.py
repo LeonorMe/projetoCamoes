@@ -31,7 +31,7 @@ def profile(request):
     
     if request.method == 'POST': 
         if 'submit_form_user' in request.POST:
-            form_user = QuoteUpload(request.POST, prefix='form_user')
+            form_user = UserUpdate(request.POST, prefix='form_user')
             if form_user.is_valid():
                 form_user.save()
                 messages.success(request, 'User information updated successfully.')

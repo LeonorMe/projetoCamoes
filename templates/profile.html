@@ -10,24 +10,10 @@
 {% block userData %}
 <section class="dboad_sec">
   <h2>{{_("Bem vindo/a")}} {{request.user}}</h2>
-  <form method="post" id="form_user">
-    {% comment '
-    {% csrf_token %} {{ form.user.password.as_field_group }} 
-    {% for div in form_user %} 
-    {% endfor %}
 
-    <div class="">
-      {{ form.name.errors }}
-      <label for="{{ form.name.id_for_label }}">Your message:</label>
-      {{ form.name }}
-      <span class="focus-border"></span>
-    </div> '
-    %}
-    <!--div>
-            <input class="effect-16" type="text" placeholder="">
-            <label>Nome</label>
-            <span class="focus-border"></span>
-        </div-->
+  <form method="post" id="form_user">
+    {% csrf_token %}
+    {{ form_user }} 
 
     <button type="submit" name="submit_form_user">{{_("Enviar")}}</button>
   </form>

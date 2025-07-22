@@ -150,7 +150,7 @@
     min-height: calc(20vw * 3 / 4);
     padding: 1em 1em;
     position: absolute;
-    bottom: 5vh;
+    bottom: 10vh;
     right: 5vw;
     animation: notes ease-in-out 1s;
     color: var(--gs-light)
@@ -164,21 +164,19 @@
     width: auto;
     height: 15vh;
     position: absolute;
-    bottom: 10vh;
-    right: 40vw;
+    bottom: 15vh;
+    left: 5vw;
     padding: 1em 1em;
     animation: audio ease-in-out 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @keyframes notes {
     from {
         bottom: 30vh;
         right: 40vw;
-    }
-
-    to {
-        bottom: 5vh;
-        right: 5vw;
     } 
 }
 
@@ -187,11 +185,6 @@
         top: 40vh;
         left: 40vw;
     }
-
-    to {
-        top: 20vh;
-        left: 5vw;
-    }
 }
 
 @keyframes audio {
@@ -199,9 +192,62 @@
         top: 50vh;
         left: 40vw;
     }
+}
 
-    to {
-        bottom: 0vh;
-        right: 40vw;
+@media (max-width: 1500px) {
+    .cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2em;
+        margin-bottom: 5vh;
     }
+
+    .notes {
+        position: relative;
+        top:0;
+        left:0;
+        width: 30vw;
+        animation: none;
+    }
+    
+    .illustration {
+        position: relative;
+        top:0;
+        left:0;
+        animation: none;
+    }
+    
+    .audio {
+        position: relative;
+        top:0;
+        left:0;
+        animation: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .book{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .page {
+        height: 60vh;
+        width: calc(60vh * 4 / 5);
+        padding: 3em 1em;
+        font-size: var(--font-l);
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+        margin-bottom: 5vh;
+    }
+    .card{
+        width: 60vw;
+        height: auto;
+    }
+
 }

@@ -52,15 +52,19 @@
       </div>
     </article>
   </a>
+</section>
 
+<section class="cards">
+  
+
+  <article class="card illustration">
+    <img src="{{estrofe_img}}" />
+  </article>
+  
   <article class="card notes">
     <h3>{{_("Notas")}}</h3>
     <p>{{estrofe_note}}</p>
     <p></p>
-  </article>
-
-  <article class="card illustration">
-    <img src="{{estrofe_img}}" />
   </article>
 
   <article class="card audio">
@@ -69,9 +73,10 @@
       <source src="./media/audio({{audio_pt}}" />
     </audio>
   </article>
-
-  {% endif %}
 </section>
+
+{% endif %}
+
 
 {% endblock %} {% block script %} {% load static %}
 <script src="{% static 'js/lusiadas.js' %}"></script>

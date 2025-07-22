@@ -1,25 +1,20 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  margin-bottom: 10vh;
+.video-sec {
+  margin: 10vh 0;
+  width: 80vw;
 }
 
 .video-gallery {
+  width: 100%;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 30px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 40px auto;
-  height: 300px;
+  gap: 2em;
 }
 
 .side-video {
-  flex: 1 1 30%;
+  width: 25vw;
   height: 100%;
 }
 
@@ -33,7 +28,7 @@
 .side-video iframe {
   width: 100% !important;
   height: 100% !important;
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   display: block;
 }
 
@@ -101,4 +96,11 @@
   margin: 0;
   font-size: var(--font-xs);
   opacity: 0.8;
+}
+
+@media (max-width: 992px) {
+  .side-video {
+    width: auto;
+    height: 100%;
+  }
 }

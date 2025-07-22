@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="{% static 'css/login.css' %}" />
   </head>
 
-  <body class="dark-theme">
-    <div class="container">
-      <div class="form-box login">
+  <body>
+    <div class="container login">
+      <div class="form-box">
         <form method="POST" action="login">
           {% csrf_token %}
           <h1>{{_("Entrar")}}</h1>
@@ -38,11 +38,9 @@
       </div>
 
       <div class="toggle-box">
-        <div class="toggle-panel toggle-left">
-          <h1 class="login_bem_vindo">{{_("Salve, Bem-vindo/a!")}}</h1>
-          <p>{{_("Ainda não tem conta?")}}</p>
-          <a href="register" class="btn register-btn">{{_("Registar")}}</a>
-        </div>
+        <h1 class="login_bem_vindo">{{_("Salve, Bem-vindo/a!")}}</h1>
+        <p>{{_("Ainda não tem conta?")}}</p>
+        <a href="register" class="btn btn-secondary">{{_("Registar")}}</a>
       </div>
     </div>
 

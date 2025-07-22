@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="{% static 'css/login.css' %}" />
   </head>
 
-  <body class="dark-theme">
-    <div class="container active">
+  <body>
+
+    <div class="container register">
       
-      <div class="form-box register">
+      <div class="form-box">
+        <div>
+
         <form method="POST" action="register">
           {% csrf_token %} {% csrf_token %}
           <h1>{{_("Registar")}}</h1>
@@ -26,34 +29,31 @@
             <i class="bx bx-envelope"></i>
           </div>
           <div class="input-box">
-            <label for="id_password1">Password*:
+            <label for="id_password1">Password*:</label>
               {{form.password1}}
-            </label>
             <i class="bx bx-lock"></i>
           </div>
           <div class="input-box">
-            <label for="id_password2">Repetir password*:
+            <label for="id_password2">Repetir password*:</label>
             {{form.password2}}
             <i class="bx bx-lock"></i>
           </div>
-          <input type="submit" class="btn" value="{{_("Entrar")}}"/>
+          <input type="submit" class="btn" value="{{_("Registar")}}"/>
         </form>
-        {{form.errors}}
+
+        <div>
+          {{form.errors}}
+        </div>
+
+        </div>
       </div>
 
       <div class="toggle-box">
-        <div class="toggle-panel toggle-right">
-          <h1 class="login_bem_vindo">{{_("Bem-vindo/a de volta!")}}</h1>
-          <p>{{_("Já tem uma conta?")}}</p>
-          <a href="login" class="btn login-btn">{{_("Entrar")}}</a>
-        </div>
-        <div class="toggle-panel toggle-left">
-          <h1 class="login_bem_vindo">{{_("Salve, Bem-vindo/a!")}}</h1>
-          <p>{{_("Ainda não tem conta?")}}</p>
-          <a href="register" class="btn register-btn">{{_("Registar")}}</a>
-        </div>
+        <h1 class="login_bem_vindo">{{_("Bem-vindo/a de volta!")}}</h1>
+        <p>{{_("Já tem uma conta?")}}</p>
+        <a href="login" class="btn btn-secondary">{{_("Entrar")}}</a>
       </div>
-    </div>
+  </div>
 
     <script src="{% static 'js/login.js' %}"></script>
   </body>

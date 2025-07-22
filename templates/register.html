@@ -9,73 +9,48 @@
   </head>
 
   <body class="dark-theme">
-    <div class="container">
-      <div class="form-box login">
-        {% comment %}
-        <form method="POST" action="login">
-          {% csrf_token %}
-          <h1>Entrar</h1>
-          <div class="input-box">
-            <!--label for="nome">Nome*:</label-->
-            {{form.username}}
-            <!--input type="text" placeholder="Nome" name="nome" required /-->
-            <i class="bx bx-user"></i>
-          </div>
-          <div class="input-box">
-            <!--label for="pass">Password*:</label-->
-            {{form.password}}
-            <!--input type="password" placeholder="Password" name="pass" required /-->
-            <i class="bx bx-lock"></i>
-          </div>
-          <div class="forgot-link">
-            <a href="#">Esqueceu-se da sua palavra-passe?</a>
-          </div>
-          <button type="submit" class="btn">Entrar</button>
-        </form>
-        {{form.errors}} {% endcomment %}
-      </div>
-
+    <div class="container active">
+      
       <div class="form-box register">
         <form method="POST" action="register">
           {% csrf_token %} {% csrf_token %}
           <h1>{{_("Registar")}}</h1>
           <div class="input-box">
+            <label for="id_username">{{_("Nome de")}} {{form.username.label}}*:</label>
             {{form.username}}
-            <!--input type="text" placeholder="Nome" required /-->
             <i class="bx bx-user"></i>
           </div>
           <div class="input-box">
+            <label for="id_email">{{form.email.label}}:</label>
             {{form.email}}
-            <!--input type="email" placeholder="Email" required /-->
             <i class="bx bx-envelope"></i>
           </div>
           <div class="input-box">
-            {{form.password1}}
-            <!--input type="password" placeholder="Password" required /-->
+            <label for="id_password1">Password*:
+              {{form.password1}}
+            </label>
             <i class="bx bx-lock"></i>
           </div>
           <div class="input-box">
+            <label for="id_password2">Repetir password*:
             {{form.password2}}
-            <!--input type="password" placeholder="Password" required /-->
             <i class="bx bx-lock"></i>
           </div>
-          <input type="submit" value="{{_("Entrar")}}" />
-          <!--button type="submit" class="btn">Registar</button-->
+          <input type="submit" class="btn" value="{{_("Entrar")}}"/>
         </form>
         {{form.errors}}
       </div>
 
       <div class="toggle-box">
-        <div class="toggle-panel toggle-left">
-          <h1 class="login_bem_vindo">{{_("Salve, Bem-vindo/a!")}}</h1>
-          <p>{{_("Ainda não tem conta?")}}</p>
-          <button class="btn register-btn">{{_("Registar")}}</button>
-        </div>
         <div class="toggle-panel toggle-right">
           <h1 class="login_bem_vindo">{{_("Bem-vindo/a de volta!")}}</h1>
           <p>{{_("Já tem uma conta?")}}</p>
-          <button class="btn login-btn">{{_("Entrar")}}</button>
-          <a href="login">{{_("Entrar")}}</a>
+          <a href="login" class="btn login-btn">{{_("Entrar")}}</a>
+        </div>
+        <div class="toggle-panel toggle-left">
+          <h1 class="login_bem_vindo">{{_("Salve, Bem-vindo/a!")}}</h1>
+          <p>{{_("Ainda não tem conta?")}}</p>
+          <a href="register" class="btn register-btn">{{_("Registar")}}</a>
         </div>
       </div>
     </div>

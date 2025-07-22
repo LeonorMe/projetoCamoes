@@ -4,11 +4,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; 
 }
 
 body{
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,8 +17,8 @@ body{
 
 .container{
     position: relative;
-    width: 850px;
-    height: 550px;
+    width: 80vw;
+    height: 60vh;
     background: var(--gs-light);
     border-radius: var(--border-radius);
     box-shadow: 0 0 30px var(--shadow-dark);
@@ -59,17 +58,22 @@ form{
 }
 
 .container h1{
-    font-size: 36px;
-    margin: -10px 0;
+    font-size: var(--font-xl);
+    margin: 1em 0;
 }
 /* h1 */
 .login_bem_vindo{
     color: var(--gs-light);
 }
 
+.lable{
+    justify-self: start;
+    font-size: var(--font-l);
+}
+
 .input-box{
     position: relative;
-    margin: 30px 0;
+    margin: 0 0;
 }
 
 .input-box input{

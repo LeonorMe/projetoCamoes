@@ -265,16 +265,6 @@ a:focus {
 .hero_art {
   width: 50vw;
   height: calc(50vw * 2 / 4);
-  animation: down 1.5s ease-out 0s;
-}
-
-@keyframes down {
-  from {
-    height: 0;
-  }
-  to{
-    height: calc(50vw * 2 / 4);
-  }
 }
 
 .hero_art img{
@@ -283,6 +273,16 @@ a:focus {
   object-fit: cover;
   object-position: center;
   border-radius: 0 0 var(--border-radius) var(--border-radius) ;
+  animation: down 1.5s ease-out 0s;
+}
+@keyframes down {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 100%;
+  }
 }
 
 /* -- start quote -- */

@@ -29,7 +29,6 @@
   font-size: 2em;
   font-weight: bold;
   cursor: pointer;
-  user-select: none;
 }
 
 .close:hover {
@@ -60,6 +59,12 @@
   height: auto;
   border-radius: var(--border-radius);
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.pdf-cover:hover{
+  transform: translateY(20px) 0.5s;
+  border: var(--accent) var(--border-small) solid;
+  border-radius: var(--border-radius);
 }
 
 /* Texto do pdf-info */

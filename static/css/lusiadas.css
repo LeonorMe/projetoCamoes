@@ -127,6 +127,7 @@
     border: none;
     border-radius: var(--border-radius);
     background-color: var(--secondary);
+    color: var(--gs-light);
     box-shadow: 0 1em 1em var(--shadow-dark);
 }
 
@@ -153,7 +154,6 @@
     bottom: 10vh;
     right: 5vw;
     animation: notes ease-in-out 1s;
-    color: var(--gs-light)
 }
 
 .notes h3{

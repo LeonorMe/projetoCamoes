@@ -69,9 +69,13 @@
 
   <article class="card audio">
     <h3>{{_("Leitura")}}</h3>
+    {%if audio_pt %}
     <audio controls>
       <source src="{{audio_pt.url}}" />
     </audio>
+    {% else %}
+    <p>{{_("Infelizmente ainda não está disponível o áudio desta estrofe.")}}</p>
+    {% endif %}
   </article>
 </section>
 

@@ -131,3 +131,9 @@ form .div {
     display: flex;
     flex-direction: row;
 } */
+
+@media (max-width: 992px) {
+    .dboad_sec {
+        width: 80vw;
+    }
+}

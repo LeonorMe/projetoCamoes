@@ -21,7 +21,7 @@
             {% endcomment %}
             
             <form action="{% url 'subscribe' %}" method="post"> <!--/subscribe/-->
-            {% csrf_token %}
+                {% csrf_token %}
                 {{form_subs}}
                 <button type="submit">{{_("Subscrever")}}</button>
                 <!--input type="submit" values="Subscrever"-->
